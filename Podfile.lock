@@ -1,0 +1,16 @@
+PODS:
+  - YandexLoginSDK (2.1.0)
+
+DEPENDENCIES:
+  - YandexLoginSDK
+
+SPEC REPOS:
+  trunk:
+    - YandexLoginSDK
+
+SPEC CHECKSUMS:
+  YandexLoginSDK: cec22fc509343c519ee31b62b38acc1753a78123
+
+PODFILE CHECKSUM: f1fe6a7a55814c83e70f9fec11a6cd571453ef9e
+
+COCOAPODS: 1.12.0

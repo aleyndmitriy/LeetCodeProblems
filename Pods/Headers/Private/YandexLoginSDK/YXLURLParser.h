@@ -1,0 +1,1 @@
+../../../YandexLoginSDK/lib/Classes/Private/Core/YXLURLParser.h

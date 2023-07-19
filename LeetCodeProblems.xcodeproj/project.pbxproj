@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F2648844F5A22EA9F0FDCB9 /* libPods-LeetCodeProblems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1734C17FD0C550D5B1F6F05A /* libPods-LeetCodeProblems.a */; };
+		FE04829829FA87EC00FCFAA8 /* LoginViewInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04829729FA87EC00FCFAA8 /* LoginViewInteractor.m */; };
+		FE04829E29FBCA5800FCFAA8 /* LoginViewRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04829D29FBCA5800FCFAA8 /* LoginViewRouter.m */; };
+		FE0482A129FBCBA800FCFAA8 /* LoginViewModuleInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0482A029FBCBA800FCFAA8 /* LoginViewModuleInitializer.m */; };
+		FE0482A529FBDA7C00FCFAA8 /* LoginViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0482A429FBDA7C00FCFAA8 /* LoginViewPresenter.m */; };
+		FE0482A729FE5AFA00FCFAA8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0482A629FE5AFA00FCFAA8 /* libsqlite3.tbd */; };
+		FE0482AC29FE5D2900FCFAA8 /* SQLiteDataBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE0482AA29FE5D2900FCFAA8 /* SQLiteDataBase.cpp */; };
+		FE24862029E9CD96008044FA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24861F29E9CD96008044FA /* Utils.m */; };
+		FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */; };
+		FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE57C52C29E89A6000DC3ABE /* UserProfileData.m */; };
+		FE8ABB932A655CB6009584D7 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8ABB922A655CB6009584D7 /* libxml2.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		FE965EF929EF0F9C00A8402A /* LoginYandexPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */; };
+		FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B0F29D7007B0013B85F /* AppDelegate.m */; };
+		FE971B1329D7007B0013B85F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B1229D7007B0013B85F /* SceneDelegate.m */; };
+		FE971B1629D7007B0013B85F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B1529D7007B0013B85F /* MainViewController.m */; };
+		FE971B1929D7007B0013B85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE971B1729D7007B0013B85F /* Main.storyboard */; };
+		FE971B1B29D7007C0013B85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE971B1A29D7007C0013B85F /* Assets.xcassets */; };
+		FE971B1E29D7007C0013B85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE971B1C29D7007C0013B85F /* LaunchScreen.storyboard */; };
+		FE971B2129D7007C0013B85F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B2029D7007C0013B85F /* main.m */; };
+		FE97A07829DAF1B800048A06 /* MainViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A07729DAF1B800048A06 /* MainViewPresenter.m */; };
+		FE97A07D29DB411000048A06 /* MainViewInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A07C29DB411000048A06 /* MainViewInteractor.m */; };
+		FE97A08229DB53DF00048A06 /* MainViewRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A08129DB53DF00048A06 /* MainViewRouter.m */; };
+		FE97A08529DB569800048A06 /* MainViewModuleInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A08429DB569800048A06 /* MainViewModuleInitializer.m */; };
+		FE98F92629E5E0B3007916BE /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE98F92529E5E0B3007916BE /* LoginService.m */; };
+		FE98F92A29E5E2FF007916BE /* LoginYandexService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE98F92929E5E2FF007916BE /* LoginYandexService.m */; };
+		FE9CBEE22A0BAD2C005B00ED /* CPPUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9CBEE02A0BAD2C005B00ED /* CPPUtils.cpp */; };
+		FE9CBEE92A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9CBEE72A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp */; };
+		FE9F160029E417D800872139 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F15FF29E417D800872139 /* LoginViewController.m */; };
+		FE9F160229E417F700872139 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9F160129E417F700872139 /* Login.storyboard */; };
+		FE9F160729E4217700872139 /* LoginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F160629E4217700872139 /* LoginViewCell.m */; };
+		FEA0683E2A0D348C00D9D72C /* SQLiteConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1734C17FD0C550D5B1F6F05A /* libPods-LeetCodeProblems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeetCodeProblems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27E4350CEFA68ED751E4C3C /* Pods-LeetCodeProblems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodeProblems.debug.xcconfig"; path = "Target Support Files/Pods-LeetCodeProblems/Pods-LeetCodeProblems.debug.xcconfig"; sourceTree = "<group>"; };
+		D47E1728386490AAADD7A60F /* Pods-LeetCodeProblems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodeProblems.release.xcconfig"; path = "Target Support Files/Pods-LeetCodeProblems/Pods-LeetCodeProblems.release.xcconfig"; sourceTree = "<group>"; };
+		FE04829629FA87EC00FCFAA8 /* LoginViewInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewInteractor.h; sourceTree = "<group>"; };
+		FE04829729FA87EC00FCFAA8 /* LoginViewInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewInteractor.m; sourceTree = "<group>"; };
+		FE04829929FA885700FCFAA8 /* LoginViewInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewInteractorOutput.h; sourceTree = "<group>"; };
+		FE04829A29FA8BC700FCFAA8 /* LoginViewRouterInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewRouterInput.h; sourceTree = "<group>"; };
+		FE04829B29FA8CD400FCFAA8 /* LoginViewInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewInteractorInput.h; sourceTree = "<group>"; };
+		FE04829C29FBCA5800FCFAA8 /* LoginViewRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewRouter.h; sourceTree = "<group>"; };
+		FE04829D29FBCA5800FCFAA8 /* LoginViewRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewRouter.m; sourceTree = "<group>"; };
+		FE04829F29FBCBA800FCFAA8 /* LoginViewModuleInitializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModuleInitializer.h; sourceTree = "<group>"; };
+		FE0482A029FBCBA800FCFAA8 /* LoginViewModuleInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModuleInitializer.m; sourceTree = "<group>"; };
+		FE0482A229FBD9D900FCFAA8 /* LoginViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewOutput.h; sourceTree = "<group>"; };
+		FE0482A329FBDA7C00FCFAA8 /* LoginViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewPresenter.h; sourceTree = "<group>"; };
+		FE0482A429FBDA7C00FCFAA8 /* LoginViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewPresenter.m; sourceTree = "<group>"; };
+		FE0482A629FE5AFA00FCFAA8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FE0482AA29FE5D2900FCFAA8 /* SQLiteDataBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteDataBase.cpp; sourceTree = "<group>"; };
+		FE0482AB29FE5D2900FCFAA8 /* SQLiteDataBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SQLiteDataBase.hpp; sourceTree = "<group>"; };
+		FE0482AD2A00F21000FCFAA8 /* SQLiteConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteConstants.h; sourceTree = "<group>"; };
+		FE24861E29E9CD70008044FA /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		FE24861F29E9CD96008044FA /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadPool.cpp; sourceTree = "<group>"; };
+		FE35227A2A17D9CF005B11B6 /* ThreadPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		FE41E0D029F27C7B00F7F1B5 /* LoginViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewInput.h; sourceTree = "<group>"; };
+		FE43D70129E0331E00D25F7C /* LeetCodeProblems.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeetCodeProblems.entitlements; sourceTree = "<group>"; };
+		FE51C79C29D9E50400BBECF4 /* MainViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewInput.h; sourceTree = "<group>"; };
+		FE51C79D29D9E55A00BBECF4 /* MainViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewOutput.h; sourceTree = "<group>"; };
+		FE57C52B29E89A6000DC3ABE /* UserProfileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileData.h; sourceTree = "<group>"; };
+		FE57C52C29E89A6000DC3ABE /* UserProfileData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfileData.m; sourceTree = "<group>"; };
+		FE8ABB902A654ECD009584D7 /* LoginServiceOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginServiceOutput.h; sourceTree = "<group>"; };
+		FE8ABB922A655CB6009584D7 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		FE8ABB942A656F33009584D7 /* LoginViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewCellDelegate.h; sourceTree = "<group>"; };
+		FE965EF729EF0F9C00A8402A /* LoginYandexPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginYandexPresenter.h; sourceTree = "<group>"; };
+		FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginYandexPresenter.m; sourceTree = "<group>"; };
+		FE971B0B29D7007B0013B85F /* LeetCodeProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE971B0E29D7007B0013B85F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE971B0F29D7007B0013B85F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE971B1129D7007B0013B85F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FE971B1229D7007B0013B85F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FE971B1429D7007B0013B85F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FE971B1529D7007B0013B85F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FE971B1829D7007B0013B85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE971B1A29D7007C0013B85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE971B1D29D7007C0013B85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE971B1F29D7007C0013B85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE971B2029D7007C0013B85F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE97A07629DAF1B800048A06 /* MainViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewPresenter.h; sourceTree = "<group>"; };
+		FE97A07729DAF1B800048A06 /* MainViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewPresenter.m; sourceTree = "<group>"; };
+		FE97A07929DAF72E00048A06 /* MainViewInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewInteractorOutput.h; sourceTree = "<group>"; };
+		FE97A07A29DB097000048A06 /* MainViewInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewInteractorInput.h; sourceTree = "<group>"; };
+		FE97A07B29DB411000048A06 /* MainViewInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewInteractor.h; sourceTree = "<group>"; };
+		FE97A07C29DB411000048A06 /* MainViewInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewInteractor.m; sourceTree = "<group>"; };
+		FE97A07F29DB42DF00048A06 /* MainViewRouterInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewRouterInput.h; sourceTree = "<group>"; };
+		FE97A08029DB53DE00048A06 /* MainViewRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewRouter.h; sourceTree = "<group>"; };
+		FE97A08129DB53DF00048A06 /* MainViewRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewRouter.m; sourceTree = "<group>"; };
+		FE97A08329DB569800048A06 /* MainViewModuleInitializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModuleInitializer.h; sourceTree = "<group>"; };
+		FE97A08429DB569800048A06 /* MainViewModuleInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModuleInitializer.m; sourceTree = "<group>"; };
+		FE98F92429E5E0B3007916BE /* LoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		FE98F92529E5E0B3007916BE /* LoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		FE98F92829E5E2FF007916BE /* LoginYandexService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginYandexService.h; sourceTree = "<group>"; };
+		FE98F92929E5E2FF007916BE /* LoginYandexService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginYandexService.m; sourceTree = "<group>"; };
+		FE9CBEE02A0BAD2C005B00ED /* CPPUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPPUtils.cpp; sourceTree = "<group>"; };
+		FE9CBEE12A0BAD2C005B00ED /* CPPUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPUtils.hpp; sourceTree = "<group>"; };
+		FE9CBEE52A0C14D7005B00ED /* IUserProfileDAO.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IUserProfileDAO.hpp; sourceTree = "<group>"; };
+		FE9CBEE72A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UserProfileDAOSqliteImpl.cpp; sourceTree = "<group>"; };
+		FE9CBEE82A0C1F20005B00ED /* UserProfileDAOSqliteImpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UserProfileDAOSqliteImpl.hpp; sourceTree = "<group>"; };
+		FE9F15FE29E417D800872139 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FE9F15FF29E417D800872139 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FE9F160129E417F700872139 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FE9F160529E4217700872139 /* LoginViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewCell.h; sourceTree = "<group>"; };
+		FE9F160629E4217700872139 /* LoginViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewCell.m; sourceTree = "<group>"; };
+		FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SQLiteConstants.c; sourceTree = "<group>"; };
+		FEA798B72A03C6FA0012617C /* CUserProfileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUserProfileData.h; sourceTree = "<group>"; };
+		FEA798B82A03C7D60012617C /* ServicesConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesConsts.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE971B0829D7007B0013B85F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8ABB932A655CB6009584D7 /* libxml2.tbd in Frameworks */,
+				FE0482A729FE5AFA00FCFAA8 /* libsqlite3.tbd in Frameworks */,
+				7F2648844F5A22EA9F0FDCB9 /* libPods-LeetCodeProblems.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		731098FEC9628D954576E220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8ABB922A655CB6009584D7 /* libxml2.tbd */,
+				FE0482A629FE5AFA00FCFAA8 /* libsqlite3.tbd */,
+				1734C17FD0C550D5B1F6F05A /* libPods-LeetCodeProblems.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E74F884FCA51D5527339E518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D27E4350CEFA68ED751E4C3C /* Pods-LeetCodeProblems.debug.xcconfig */,
+				D47E1728386490AAADD7A60F /* Pods-LeetCodeProblems.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE0482A829FE5BCB00FCFAA8 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				FE9CBEE32A0C1483005B00ED /* UserProfileDAO */,
+				FE0482A929FE5C8E00FCFAA8 /* SQLiteData */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		FE0482A929FE5C8E00FCFAA8 /* SQLiteData */ = {
+			isa = PBXGroup;
+			children = (
+				FE0482AA29FE5D2900FCFAA8 /* SQLiteDataBase.cpp */,
+				FE0482AB29FE5D2900FCFAA8 /* SQLiteDataBase.hpp */,
+				FE0482AD2A00F21000FCFAA8 /* SQLiteConstants.h */,
+				FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */,
+			);
+			path = SQLiteData;
+			sourceTree = "<group>";
+		};
+		FE24861D29E9CCF6008044FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE24861E29E9CD70008044FA /* Utils.h */,
+				FE24861F29E9CD96008044FA /* Utils.m */,
+				FE9CBEE02A0BAD2C005B00ED /* CPPUtils.cpp */,
+				FE9CBEE12A0BAD2C005B00ED /* CPPUtils.hpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FE3522772A17D957005B11B6 /* LocalServices */ = {
+			isa = PBXGroup;
+			children = (
+				FE3522782A17D96B005B11B6 /* ThreadPool */,
+			);
+			path = LocalServices;
+			sourceTree = "<group>";
+		};
+		FE3522782A17D96B005B11B6 /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */,
+				FE35227A2A17D9CF005B11B6 /* ThreadPool.hpp */,
+			);
+			path = ThreadPool;
+			sourceTree = "<group>";
+		};
+		FE51C79629D9E3B800BBECF4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F15F729E4104200872139 /* Login */,
+				FE51C79729D9E3D000BBECF4 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FE51C79729D9E3D000BBECF4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FE51C79B29D9E43D00BBECF4 /* View */,
+				FE51C79A29D9E43400BBECF4 /* Presenter */,
+				FE51C79929D9E42900BBECF4 /* Interactor */,
+				FE97A07E29DB42A100048A06 /* Router */,
+				FE51C79829D9E41700BBECF4 /* Configuration */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FE51C79829D9E41700BBECF4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FE97A08329DB569800048A06 /* MainViewModuleInitializer.h */,
+				FE97A08429DB569800048A06 /* MainViewModuleInitializer.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FE51C79929D9E42900BBECF4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FE97A07B29DB411000048A06 /* MainViewInteractor.h */,
+				FE97A07C29DB411000048A06 /* MainViewInteractor.m */,
+				FE97A07929DAF72E00048A06 /* MainViewInteractorOutput.h */,
+				FE97A07A29DB097000048A06 /* MainViewInteractorInput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FE51C79A29D9E43400BBECF4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FE97A07629DAF1B800048A06 /* MainViewPresenter.h */,
+				FE97A07729DAF1B800048A06 /* MainViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FE51C79B29D9E43D00BBECF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE971B1429D7007B0013B85F /* MainViewController.h */,
+				FE971B1529D7007B0013B85F /* MainViewController.m */,
+				FE971B1729D7007B0013B85F /* Main.storyboard */,
+				FE51C79C29D9E50400BBECF4 /* MainViewInput.h */,
+				FE51C79D29D9E55A00BBECF4 /* MainViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE57C52E29E89A7400DC3ABE /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FE57C52B29E89A6000DC3ABE /* UserProfileData.h */,
+				FE57C52C29E89A6000DC3ABE /* UserProfileData.m */,
+				FEA798B72A03C6FA0012617C /* CUserProfileData.h */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		FE971B0229D7007A0013B85F = {
+			isa = PBXGroup;
+			children = (
+				FE971B0D29D7007B0013B85F /* LeetCodeProblems */,
+				FE971B0C29D7007B0013B85F /* Products */,
+				E74F884FCA51D5527339E518 /* Pods */,
+				731098FEC9628D954576E220 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE971B0C29D7007B0013B85F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE971B0B29D7007B0013B85F /* LeetCodeProblems.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE971B0D29D7007B0013B85F /* LeetCodeProblems */ = {
+			isa = PBXGroup;
+			children = (
+				FE43D70129E0331E00D25F7C /* LeetCodeProblems.entitlements */,
+				FE51C79629D9E3B800BBECF4 /* Modules */,
+				FE0482A829FE5BCB00FCFAA8 /* DataBase */,
+				FE3522772A17D957005B11B6 /* LocalServices */,
+				FE98F92229E5D2D3007916BE /* Services */,
+				FE24861D29E9CCF6008044FA /* Utils */,
+				FE971B0E29D7007B0013B85F /* AppDelegate.h */,
+				FE971B0F29D7007B0013B85F /* AppDelegate.m */,
+				FE971B1129D7007B0013B85F /* SceneDelegate.h */,
+				FE971B1229D7007B0013B85F /* SceneDelegate.m */,
+				FE971B1A29D7007C0013B85F /* Assets.xcassets */,
+				FE971B1C29D7007C0013B85F /* LaunchScreen.storyboard */,
+				FE971B1F29D7007C0013B85F /* Info.plist */,
+				FE971B2029D7007C0013B85F /* main.m */,
+			);
+			path = LeetCodeProblems;
+			sourceTree = "<group>";
+		};
+		FE97A07E29DB42A100048A06 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FE97A07F29DB42DF00048A06 /* MainViewRouterInput.h */,
+				FE97A08029DB53DE00048A06 /* MainViewRouter.h */,
+				FE97A08129DB53DF00048A06 /* MainViewRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE98F92229E5D2D3007916BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEA798B82A03C7D60012617C /* ServicesConsts.h */,
+				FE57C52E29E89A7400DC3ABE /* UserProfile */,
+				FE98F92329E5D319007916BE /* LoginService */,
+				FE98F92729E5E2A3007916BE /* LoginYandexService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FE98F92329E5D319007916BE /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				FE98F92429E5E0B3007916BE /* LoginService.h */,
+				FE98F92529E5E0B3007916BE /* LoginService.m */,
+				FE8ABB902A654ECD009584D7 /* LoginServiceOutput.h */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		FE98F92729E5E2A3007916BE /* LoginYandexService */ = {
+			isa = PBXGroup;
+			children = (
+				FE98F92829E5E2FF007916BE /* LoginYandexService.h */,
+				FE98F92929E5E2FF007916BE /* LoginYandexService.m */,
+			);
+			path = LoginYandexService;
+			sourceTree = "<group>";
+		};
+		FE9CBEE32A0C1483005B00ED /* UserProfileDAO */ = {
+			isa = PBXGroup;
+			children = (
+				FE9CBEE52A0C14D7005B00ED /* IUserProfileDAO.hpp */,
+				FE9CBEE72A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp */,
+				FE9CBEE82A0C1F20005B00ED /* UserProfileDAOSqliteImpl.hpp */,
+			);
+			path = UserProfileDAO;
+			sourceTree = "<group>";
+		};
+		FE9F15F729E4104200872139 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F15FC29E412B400872139 /* View */,
+				FE9F15FB29E412A600872139 /* Presenter */,
+				FE9F15FA29E4129D00872139 /* Interactor */,
+				FE9F15F829E4128000872139 /* Router */,
+				FE9F15F929E4129000872139 /* Configurator */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FE9F15F829E4128000872139 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FE04829A29FA8BC700FCFAA8 /* LoginViewRouterInput.h */,
+				FE04829C29FBCA5800FCFAA8 /* LoginViewRouter.h */,
+				FE04829D29FBCA5800FCFAA8 /* LoginViewRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FE9F15F929E4129000872139 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FE04829F29FBCBA800FCFAA8 /* LoginViewModuleInitializer.h */,
+				FE0482A029FBCBA800FCFAA8 /* LoginViewModuleInitializer.m */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FE9F15FA29E4129D00872139 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FE04829629FA87EC00FCFAA8 /* LoginViewInteractor.h */,
+				FE04829729FA87EC00FCFAA8 /* LoginViewInteractor.m */,
+				FE04829929FA885700FCFAA8 /* LoginViewInteractorOutput.h */,
+				FE04829B29FA8CD400FCFAA8 /* LoginViewInteractorInput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FE9F15FB29E412A600872139 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FEBA390D29EDEA0500D0C34E /* YandexPresenter */,
+				FE0482A329FBDA7C00FCFAA8 /* LoginViewPresenter.h */,
+				FE0482A429FBDA7C00FCFAA8 /* LoginViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FE9F15FC29E412B400872139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F160329E41F2F00872139 /* Cells */,
+				FE9F15FE29E417D800872139 /* LoginViewController.h */,
+				FE9F15FF29E417D800872139 /* LoginViewController.m */,
+				FE9F160129E417F700872139 /* Login.storyboard */,
+				FE41E0D029F27C7B00F7F1B5 /* LoginViewInput.h */,
+				FE0482A229FBD9D900FCFAA8 /* LoginViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE9F160329E41F2F00872139 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F160829E4219F00872139 /* LoginCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FE9F160829E4219F00872139 /* LoginCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F160529E4217700872139 /* LoginViewCell.h */,
+				FE9F160629E4217700872139 /* LoginViewCell.m */,
+				FE8ABB942A656F33009584D7 /* LoginViewCellDelegate.h */,
+			);
+			path = LoginCell;
+			sourceTree = "<group>";
+		};
+		FEBA390D29EDEA0500D0C34E /* YandexPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				FE965EF729EF0F9C00A8402A /* LoginYandexPresenter.h */,
+				FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */,
+			);
+			path = YandexPresenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE971B0A29D7007B0013B85F /* LeetCodeProblems */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE971B2429D7007C0013B85F /* Build configuration list for PBXNativeTarget "LeetCodeProblems" */;
+			buildPhases = (
+				658B184A584D928129D96B02 /* [CP] Check Pods Manifest.lock */,
+				FE971B0729D7007B0013B85F /* Sources */,
+				FE971B0829D7007B0013B85F /* Frameworks */,
+				FE971B0929D7007B0013B85F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCodeProblems;
+			productName = LeetCodeProblems;
+			productReference = FE971B0B29D7007B0013B85F /* LeetCodeProblems.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE971B0329D7007A0013B85F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FE971B0A29D7007B0013B85F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FE971B0629D7007A0013B85F /* Build configuration list for PBXProject "LeetCodeProblems" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE971B0229D7007A0013B85F;
+			productRefGroup = FE971B0C29D7007B0013B85F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE971B0A29D7007B0013B85F /* LeetCodeProblems */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE971B0929D7007B0013B85F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9F160229E417F700872139 /* Login.storyboard in Resources */,
+				FE971B1E29D7007C0013B85F /* LaunchScreen.storyboard in Resources */,
+				FE971B1B29D7007C0013B85F /* Assets.xcassets in Resources */,
+				FE971B1929D7007B0013B85F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		658B184A584D928129D96B02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeetCodeProblems-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE971B0729D7007B0013B85F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9F160729E4217700872139 /* LoginViewCell.m in Sources */,
+				FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */,
+				FE97A08529DB569800048A06 /* MainViewModuleInitializer.m in Sources */,
+				FE97A08229DB53DF00048A06 /* MainViewRouter.m in Sources */,
+				FEA0683E2A0D348C00D9D72C /* SQLiteConstants.c in Sources */,
+				FE9CBEE22A0BAD2C005B00ED /* CPPUtils.cpp in Sources */,
+				FE971B1629D7007B0013B85F /* MainViewController.m in Sources */,
+				FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */,
+				FE24862029E9CD96008044FA /* Utils.m in Sources */,
+				FE965EF929EF0F9C00A8402A /* LoginYandexPresenter.m in Sources */,
+				FE971B2129D7007C0013B85F /* main.m in Sources */,
+				FE04829E29FBCA5800FCFAA8 /* LoginViewRouter.m in Sources */,
+				FE0482A529FBDA7C00FCFAA8 /* LoginViewPresenter.m in Sources */,
+				FE0482AC29FE5D2900FCFAA8 /* SQLiteDataBase.cpp in Sources */,
+				FE98F92A29E5E2FF007916BE /* LoginYandexService.m in Sources */,
+				FE98F92629E5E0B3007916BE /* LoginService.m in Sources */,
+				FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */,
+				FE9CBEE92A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp in Sources */,
+				FE9F160029E417D800872139 /* LoginViewController.m in Sources */,
+				FE97A07829DAF1B800048A06 /* MainViewPresenter.m in Sources */,
+				FE97A07D29DB411000048A06 /* MainViewInteractor.m in Sources */,
+				FE971B1329D7007B0013B85F /* SceneDelegate.m in Sources */,
+				FE04829829FA87EC00FCFAA8 /* LoginViewInteractor.m in Sources */,
+				FE0482A129FBCBA800FCFAA8 /* LoginViewModuleInitializer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE971B1729D7007B0013B85F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE971B1829D7007B0013B85F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE971B1C29D7007C0013B85F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE971B1D29D7007C0013B85F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE971B2229D7007C0013B85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE971B2329D7007C0013B85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE971B2529D7007C0013B85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27E4350CEFA68ED751E4C3C /* Pods-LeetCodeProblems.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeetCodeProblems/LeetCodeProblems.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79E756PTBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = home.LeetCodeProblems;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE971B2629D7007C0013B85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47E1728386490AAADD7A60F /* Pods-LeetCodeProblems.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeetCodeProblems/LeetCodeProblems.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79E756PTBV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = home.LeetCodeProblems;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE971B0629D7007A0013B85F /* Build configuration list for PBXProject "LeetCodeProblems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE971B2229D7007C0013B85F /* Debug */,
+				FE971B2329D7007C0013B85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE971B2429D7007C0013B85F /* Build configuration list for PBXNativeTarget "LeetCodeProblems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE971B2529D7007C0013B85F /* Debug */,
+				FE971B2629D7007C0013B85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE971B0329D7007A0013B85F /* Project object */;
+}

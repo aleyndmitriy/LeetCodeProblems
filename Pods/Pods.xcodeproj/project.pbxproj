@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083B4F8CCF70F2318B0AB713A62357C3 /* YXLStatesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4E898D06FFDF0E278F09109821E7F2 /* YXLStatesManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DEAAFDE53FE88BBCD2AE030DF033977 /* YXLQueryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 019E8F3EA97F19FBF8ABC8C8F8E1B47B /* YXLQueryUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11EA0BACB4DE956CABEC5A94AAF295EA /* YXLExecuting.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EE26DF208E0528089AB89CA208A56A /* YXLExecuting.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		149B0890A97FE0CB485B1E08A2AD90FA /* YXLPkce.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A409CD8E55C61A57952EA82C7EFAD04 /* YXLPkce.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		198F47E5F3688AF27F2BE0CF1540CD20 /* YXLInsecureStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2B9F8FBA6620CCC9A8D29A2D28FA81 /* YXLInsecureStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C4238A724F0156EF4E3BB38705C2002 /* YXLResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D3E9F0F94505AFDD1F90A8E3D43BBE /* YXLResponseParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2291A6D03C2F1A50EDDF18F59C208562 /* YXLJwtRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EB4661E8BDE1438FEA27A1D113AC70 /* YXLJwtRequestParams.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27BE755A0DBCA93FC7A9A6A460A0BAB6 /* YXLResponseParserFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA23A6A346DC4A18F242A1A78DA7916 /* YXLResponseParserFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38BDB1BCD3534E00CEEAEB1F34222ED0 /* YXLActivationValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B085085BAD77D1C3B73AB1D2531F59C /* YXLActivationValidator.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38F00E65E32643F4C3BC209F730D18FD /* YXLTokenResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B2146171F8B8F129707232CB42D1D517 /* YXLTokenResponseParser.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3D0BBE62A00000CE4C5F70EC97BD5F99 /* YandexLoginSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD3F110A75EDE6358B16A1F72910938 /* YandexLoginSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		409E8B14B809329D89D42BD8661255CD /* YXLStatesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA5335B480472DD3BD86D13001BE40 /* YXLStatesManager.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45CF72A6B3191052BFBEB205E76C32B8 /* YXLObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D5E0081B4EF8D10F89E675BF4A91EB /* YXLObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BE4289C4E24AD2CF0F59CC1316A9FEB /* YXLInsecureStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6D0DE769F00651D90C3221025EFE85 /* YXLInsecureStorage.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		50B7727C02292C51C9A6D4CD32C6CE55 /* YXLAuthParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 180400A7879A3B7E5F60F749D6CF44BF /* YXLAuthParameters.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		514C7C8F5C31ECEEE3B454B00750C36E /* YXLTokenRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF983800FEAE431BE76C22ADF913B64 /* YXLTokenRequestParams.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5820897F42C456F50538419E4E42A2FF /* YXLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CBAAEA95E5605F28E5C4B7BD126F17 /* YXLSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58A58F7DF79AF895DF1B67C154DF9B87 /* YXLSecureStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = FD887AD228A96B3B5E382828FA8DCAB4 /* YXLSecureStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61286354BD95D7A1725FB14F5CEBE7FA /* YXLAuthParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 7031BEE2DB5DDE4F3D10637DD9C80FA3 /* YXLAuthParameters.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64E1F384FD44911A8E0A82BEE0EA1C5E /* YXLLoginResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8501C98C1FD7651EA000ECD2094539AF /* YXLLoginResultModel.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		68BCB4B871F84A6DD600F9521D1BF8E0 /* YXLObserversController.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F15659565AD9810F642DDD023EFE1C /* YXLObserversController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6DFA88BE851EA204264E951982B77D09 /* YXLHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBFA9F14CEB19025456B0EADF8082CC /* YXLHTTPClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7345BF7C04B1E49309CA3C9C7416002E /* YXLErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 657C27E63C708293F5F048055FDE7A33 /* YXLErrorUtils.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7BBCF3D809A889B9FBC87FB7C9FF71C5 /* YXLRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = DECF1A7D81F7DA63A0F0B8C781C391DB /* YXLRequestParams.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E4EE25DB5A380259186E774BC1EFC16 /* YXLStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 54AA4BBAAB9576D6939C70F0C58C3142 /* YXLStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EB21239C39207509BB38EC838E8AEC9 /* YXLSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31CB593B446DB063A3EC3C8A9425B3 /* YXLSdk.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7ECF9C5742E6565CCA9C7815ACC3A291 /* YXLActivationValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 136915745F0EE93DEEBA0116B11FE723 /* YXLActivationValidator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		825040CB1C81C535E5375544EDA12BC5 /* YXLStatisticsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A452BD4DA694799D2DA6CB94F1744 /* YXLStatisticsDataProvider.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8CDF77742F34DCD29C9CDE44F288A303 /* YXLLoginResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB6AFDCA7168E426E059A7F2183CA22 /* YXLLoginResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F1F2835F64022D12251FD7D95262F83 /* YXLStorageFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 59174EBA9530E9466F799C248874865C /* YXLStorageFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		908A4406C7126A36987893FF6B8CDC71 /* YandexLoginSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF97B7A02324ED03868159CB088BD716 /* YandexLoginSDK-dummy.m */; };
+		960979F3966BE5DEA1A5204A2DA0E05D /* YXLSdk+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 004A6DD2C1180139CAA2C5575C691BDE /* YXLSdk+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A58D9824E76165F6F3F352EDFA6DBE01 /* YXLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AE3292B9F3BE11BF2C5A6232BD6F7A /* YXLSessionManager.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A9A0B8C624F73AB19E0FE3EECC7C03F5 /* YXLMainQueueAsyncExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B78356EA0342FF9A95B75C186A2FA /* YXLMainQueueAsyncExecutor.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ABC9088DFC766F642F5FE5EF5A9A5230 /* YXLErrorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8259AE1916279F74AD87CD2238675CA0 /* YXLErrorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADAF61F9DB56690C21DA9504B7A66A80 /* YXLStatisticsDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8FBB6A263F99AFF305979352620E53 /* YXLStatisticsDataProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B1AF5B1EE7A83FC16F22E0936E6E5082 /* YXLTokenResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5BC12994DF28361447A61789F8AC40 /* YXLTokenResponseParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B748E3B06829242A99AFC2408FB92725 /* YXLHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F63A3166EF56ED8F59367F88314E72C1 /* YXLHTTPOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8ED34BC9DCFC97B1CD2911D48BEF95C /* YXLError.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D26E64EA6B97206A8DD81482B64CC5 /* YXLError.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B9C697F429C7DBE4D20BFA3B06D966F6 /* YXLURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 295988805A42A7AE3E3D67BCBF2E41F8 /* YXLURLParser.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BA8FF7FB8C58BA931B0E36DE771DC2BF /* YXLObserversController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F740573FC513E53B9B1DD67066333F0 /* YXLObserversController.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BC982F579A0CD7933A045001AD7F38B2 /* YXLHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A0083481F538E517E36579F7692110 /* YXLHTTPClient.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BDB3B75DF6ABAA009BF256071AA8B722 /* YXLStorageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BB79FDC8C646CD7CF9E44144856FFC2C /* YXLStorageFactory.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BDB501881F9FCC9D6C352A9B61D70352 /* YXLResponseParserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9D2C0061281F9340FF27603ED1A8F /* YXLResponseParserFactory.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BF0AFFBCA30FAE9A4DA35178177F65EC /* YXLURLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0D8996E05E04DBC199FB3C7420DAB9 /* YXLURLParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6225015860C1634BDCB83EF9C63E82E /* YXLLoginResultModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55467FECC336C99496BFE4D03B1572B6 /* YXLLoginResultModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C73EEF160479DE9825FE74D7827FFB02 /* YXLSecureStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F984F9942305E2C767A42C0A14C3FF /* YXLSecureStorage.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C85D1D62372D343B21E0568D156483E9 /* YXLJwtRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = D054BBCE96206E6BBDCE4C095832B35D /* YXLJwtRequestParams.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CB0A3F3F61A690579E1C51483C29A216 /* YXLHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C47D066835F99EB1B2203225ED2147CC /* YXLHTTPOperation.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D0DC0C23B07DBEEC302DFD90FCFF00C6 /* YXLHostProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 86106802FFA8DC688A8751F138A0912C /* YXLHostProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D38D182DE031721A16D40688CEDD9C47 /* YXLJwtResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D231E799726B2FEA798EB8B0504D86 /* YXLJwtResponseParser.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DB0EED4C6CCE856607FE9FD850A54A9D /* Pods-LeetCodeProblems-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D48DFD574BFD692006E65CD2904D53 /* Pods-LeetCodeProblems-dummy.m */; };
+		DD725286425C5577811CEAFCFE285350 /* YXLHostProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26896013CCA914174458446EFFD240 /* YXLHostProvider.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E5243DED51F0DEA9B68CAB13B4B16089 /* YXLError.h in Headers */ = {isa = PBXBuildFile; fileRef = 347A00A244D36568137372D9F885DA57 /* YXLError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6E21C2D34D38A72F894378272D23BAF /* YXLDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F73D39954EC9FE80D8F9FACB10D3C2 /* YXLDefinitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E955176312E942A60476C7E7EAE65E12 /* YXLQueryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B316D864129DE9F2421EE73DAC610D1 /* YXLQueryUtils.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E99AC7A60772E6918F5D9326FA19A3CA /* YXLJwtResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BE94F17CFFE12DB6139729772E954A58 /* YXLJwtResponseParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1BAF01FB586983525D44A8181902B4C /* YXLPkce.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B26DF5FD48B160344B7C8AF9E0DDB /* YXLPkce.m */; settings = {COMPILER_FLAGS = "-Werror -Wall -Wsign-compare -Wdocumentation-unknown-command -Wdocumentation -Wnewline-eof -Wobjc-interface-ivars -Woverriding-method-mismatch -Wsuper-class-method-mismatch -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F5B0AD1AEA49A70D8D74FD35030ACD23 /* YXLTokenRequestParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1CC4B25B7D3C9F0F94C2ECEE394369 /* YXLTokenRequestParams.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA032C8F0023B15001E954673A080268 /* YXLMainQueueAsyncExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFFCA70A551840FEFBE66C847BAB0DE /* YXLMainQueueAsyncExecutor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FDAF7ED8A7E2503BD4A8E80FF9DC10FC /* YXLSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 987DF2C5D3B03C6FB7379A09B58CCB1D /* YXLSdk.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9366632951F0319DF6D50EFA5F4704AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8CBD3958D57403F0295E562A15B39C0;
+			remoteInfo = YandexLoginSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004A6DD2C1180139CAA2C5575C691BDE /* YXLSdk+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YXLSdk+Protected.h"; path = "lib/Classes/Private/Core/YXLSdk+Protected.h"; sourceTree = "<group>"; };
+		019E8F3EA97F19FBF8ABC8C8F8E1B47B /* YXLQueryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLQueryUtils.h; path = lib/Classes/Private/Core/YXLQueryUtils.h; sourceTree = "<group>"; };
+		0A26896013CCA914174458446EFFD240 /* YXLHostProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLHostProvider.m; path = lib/Classes/Private/Core/YXLHostProvider.m; sourceTree = "<group>"; };
+		0AD3F110A75EDE6358B16A1F72910938 /* YandexLoginSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexLoginSDK.h; path = lib/Classes/YandexLoginSDK.h; sourceTree = "<group>"; };
+		11D231E799726B2FEA798EB8B0504D86 /* YXLJwtResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLJwtResponseParser.m; path = lib/Classes/Private/Networking/ResponseParser/YXLJwtResponseParser.m; sourceTree = "<group>"; };
+		136915745F0EE93DEEBA0116B11FE723 /* YXLActivationValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLActivationValidator.h; path = lib/Classes/Private/Core/YXLActivationValidator.h; sourceTree = "<group>"; };
+		180400A7879A3B7E5F60F749D6CF44BF /* YXLAuthParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLAuthParameters.m; path = lib/Classes/Private/Core/YXLAuthParameters.m; sourceTree = "<group>"; };
+		18F15659565AD9810F642DDD023EFE1C /* YXLObserversController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLObserversController.h; path = lib/Classes/Private/Core/YXLObserversController.h; sourceTree = "<group>"; };
+		2225CCC19F7B1DCAB881598CD3863E20 /* YandexLoginSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YandexLoginSDK.release.xcconfig; sourceTree = "<group>"; };
+		26BD5F26C0345532DA338367A13F4324 /* YandexLoginSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YandexLoginSDK.debug.xcconfig; sourceTree = "<group>"; };
+		295988805A42A7AE3E3D67BCBF2E41F8 /* YXLURLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLURLParser.m; path = lib/Classes/Private/Core/YXLURLParser.m; sourceTree = "<group>"; };
+		2C9B78356EA0342FF9A95B75C186A2FA /* YXLMainQueueAsyncExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLMainQueueAsyncExecutor.m; path = lib/Classes/Private/Core/Executor/YXLMainQueueAsyncExecutor.m; sourceTree = "<group>"; };
+		2DF983800FEAE431BE76C22ADF913B64 /* YXLTokenRequestParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLTokenRequestParams.m; path = lib/Classes/Private/Networking/RequestParams/YXLTokenRequestParams.m; sourceTree = "<group>"; };
+		30981C5DD2FDD7FCA03DFEB04DD73076 /* Pods-LeetCodeProblems-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeetCodeProblems-acknowledgements.plist"; sourceTree = "<group>"; };
+		347A00A244D36568137372D9F885DA57 /* YXLError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLError.h; path = lib/Classes/Public/YXLError.h; sourceTree = "<group>"; };
+		34F73D39954EC9FE80D8F9FACB10D3C2 /* YXLDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLDefinitions.h; path = lib/Classes/Private/Core/YXLDefinitions.h; sourceTree = "<group>"; };
+		39EE26DF208E0528089AB89CA208A56A /* YXLExecuting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLExecuting.h; path = lib/Classes/Private/Core/Executor/YXLExecuting.h; sourceTree = "<group>"; };
+		3B085085BAD77D1C3B73AB1D2531F59C /* YXLActivationValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLActivationValidator.m; path = lib/Classes/Private/Core/YXLActivationValidator.m; sourceTree = "<group>"; };
+		3B1CC4B25B7D3C9F0F94C2ECEE394369 /* YXLTokenRequestParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLTokenRequestParams.h; path = lib/Classes/Private/Networking/RequestParams/YXLTokenRequestParams.h; sourceTree = "<group>"; };
+		3D5A452BD4DA694799D2DA6CB94F1744 /* YXLStatisticsDataProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLStatisticsDataProvider.m; path = lib/Classes/Private/Core/YXLStatisticsDataProvider.m; sourceTree = "<group>"; };
+		3DFFCA70A551840FEFBE66C847BAB0DE /* YXLMainQueueAsyncExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLMainQueueAsyncExecutor.h; path = lib/Classes/Private/Core/Executor/YXLMainQueueAsyncExecutor.h; sourceTree = "<group>"; };
+		43D5E0081B4EF8D10F89E675BF4A91EB /* YXLObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLObserver.h; path = lib/Classes/Public/YXLObserver.h; sourceTree = "<group>"; };
+		45A0083481F538E517E36579F7692110 /* YXLHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLHTTPClient.m; path = lib/Classes/Private/Networking/YXLHTTPClient.m; sourceTree = "<group>"; };
+		496CADF85F211AE300151FDE4B7E13C9 /* YandexLoginSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YandexLoginSDK-prefix.pch"; sourceTree = "<group>"; };
+		4A409CD8E55C61A57952EA82C7EFAD04 /* YXLPkce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLPkce.h; path = lib/Classes/Private/Core/YXLPkce.h; sourceTree = "<group>"; };
+		4A4E898D06FFDF0E278F09109821E7F2 /* YXLStatesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLStatesManager.h; path = lib/Classes/Private/Core/YXLStatesManager.h; sourceTree = "<group>"; };
+		51562AF7062DE7C24ADB5D5B9F11B8BA /* libYandexLoginSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYandexLoginSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AA4BBAAB9576D6939C70F0C58C3142 /* YXLStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLStorage.h; path = lib/Classes/Private/Core/Storage/YXLStorage.h; sourceTree = "<group>"; };
+		54EB4661E8BDE1438FEA27A1D113AC70 /* YXLJwtRequestParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLJwtRequestParams.h; path = lib/Classes/Private/Networking/RequestParams/YXLJwtRequestParams.h; sourceTree = "<group>"; };
+		55467FECC336C99496BFE4D03B1572B6 /* YXLLoginResultModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLLoginResultModel.h; path = lib/Classes/Private/Core/YXLLoginResultModel.h; sourceTree = "<group>"; };
+		59174EBA9530E9466F799C248874865C /* YXLStorageFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLStorageFactory.h; path = lib/Classes/Private/Core/Storage/YXLStorageFactory.h; sourceTree = "<group>"; };
+		59CBAAEA95E5605F28E5C4B7BD126F17 /* YXLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLSessionManager.h; path = lib/Classes/Private/Networking/YXLSessionManager.h; sourceTree = "<group>"; };
+		5DAA5335B480472DD3BD86D13001BE40 /* YXLStatesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLStatesManager.m; path = lib/Classes/Private/Core/YXLStatesManager.m; sourceTree = "<group>"; };
+		61AE3292B9F3BE11BF2C5A6232BD6F7A /* YXLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLSessionManager.m; path = lib/Classes/Private/Networking/YXLSessionManager.m; sourceTree = "<group>"; };
+		657C27E63C708293F5F048055FDE7A33 /* YXLErrorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLErrorUtils.m; path = lib/Classes/Private/Networking/YXLErrorUtils.m; sourceTree = "<group>"; };
+		6F740573FC513E53B9B1DD67066333F0 /* YXLObserversController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLObserversController.m; path = lib/Classes/Private/Core/YXLObserversController.m; sourceTree = "<group>"; };
+		7031BEE2DB5DDE4F3D10637DD9C80FA3 /* YXLAuthParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLAuthParameters.h; path = lib/Classes/Private/Core/YXLAuthParameters.h; sourceTree = "<group>"; };
+		7B316D864129DE9F2421EE73DAC610D1 /* YXLQueryUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLQueryUtils.m; path = lib/Classes/Private/Core/YXLQueryUtils.m; sourceTree = "<group>"; };
+		7CA9D2C0061281F9340FF27603ED1A8F /* YXLResponseParserFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLResponseParserFactory.m; path = lib/Classes/Private/Networking/ResponseParser/YXLResponseParserFactory.m; sourceTree = "<group>"; };
+		8259AE1916279F74AD87CD2238675CA0 /* YXLErrorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLErrorUtils.h; path = lib/Classes/Private/Networking/YXLErrorUtils.h; sourceTree = "<group>"; };
+		8501C98C1FD7651EA000ECD2094539AF /* YXLLoginResultModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLLoginResultModel.m; path = lib/Classes/Private/Core/YXLLoginResultModel.m; sourceTree = "<group>"; };
+		86106802FFA8DC688A8751F138A0912C /* YXLHostProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLHostProvider.h; path = lib/Classes/Private/Core/YXLHostProvider.h; sourceTree = "<group>"; };
+		8B31CB593B446DB063A3EC3C8A9425B3 /* YXLSdk.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLSdk.m; path = lib/Classes/Public/YXLSdk.m; sourceTree = "<group>"; };
+		8C5BC12994DF28361447A61789F8AC40 /* YXLTokenResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLTokenResponseParser.h; path = lib/Classes/Private/Networking/ResponseParser/YXLTokenResponseParser.h; sourceTree = "<group>"; };
+		8C8FBB6A263F99AFF305979352620E53 /* YXLStatisticsDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLStatisticsDataProvider.h; path = lib/Classes/Private/Core/YXLStatisticsDataProvider.h; sourceTree = "<group>"; };
+		8FBFA9F14CEB19025456B0EADF8082CC /* YXLHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLHTTPClient.h; path = lib/Classes/Private/Networking/YXLHTTPClient.h; sourceTree = "<group>"; };
+		912B26DF5FD48B160344B7C8AF9E0DDB /* YXLPkce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLPkce.m; path = lib/Classes/Private/Core/YXLPkce.m; sourceTree = "<group>"; };
+		987DF2C5D3B03C6FB7379A09B58CCB1D /* YXLSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLSdk.h; path = lib/Classes/Public/YXLSdk.h; sourceTree = "<group>"; };
+		9B0D8996E05E04DBC199FB3C7420DAB9 /* YXLURLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLURLParser.h; path = lib/Classes/Private/Core/YXLURLParser.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA23A6A346DC4A18F242A1A78DA7916 /* YXLResponseParserFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLResponseParserFactory.h; path = lib/Classes/Private/Networking/ResponseParser/YXLResponseParserFactory.h; sourceTree = "<group>"; };
+		A5F984F9942305E2C767A42C0A14C3FF /* YXLSecureStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLSecureStorage.m; path = lib/Classes/Private/Core/Storage/YXLSecureStorage.m; sourceTree = "<group>"; };
+		A646BE3C1C26E42BC60BF150EB4267A2 /* Pods-LeetCodeProblems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeetCodeProblems.release.xcconfig"; sourceTree = "<group>"; };
+		B2146171F8B8F129707232CB42D1D517 /* YXLTokenResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLTokenResponseParser.m; path = lib/Classes/Private/Networking/ResponseParser/YXLTokenResponseParser.m; sourceTree = "<group>"; };
+		B67E3A7883BC6C726A136A7B452E31ED /* libPods-LeetCodeProblems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeetCodeProblems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB6AFDCA7168E426E059A7F2183CA22 /* YXLLoginResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLLoginResult.h; path = lib/Classes/Public/YXLLoginResult.h; sourceTree = "<group>"; };
+		BB79FDC8C646CD7CF9E44144856FFC2C /* YXLStorageFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLStorageFactory.m; path = lib/Classes/Private/Core/Storage/YXLStorageFactory.m; sourceTree = "<group>"; };
+		BE94F17CFFE12DB6139729772E954A58 /* YXLJwtResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLJwtResponseParser.h; path = lib/Classes/Private/Networking/ResponseParser/YXLJwtResponseParser.h; sourceTree = "<group>"; };
+		C47D066835F99EB1B2203225ED2147CC /* YXLHTTPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLHTTPOperation.m; path = lib/Classes/Private/Networking/YXLHTTPOperation.m; sourceTree = "<group>"; };
+		C63421038883C103D5C668BBDF0406AC /* Pods-LeetCodeProblems-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeetCodeProblems-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6D48DFD574BFD692006E65CD2904D53 /* Pods-LeetCodeProblems-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeetCodeProblems-dummy.m"; sourceTree = "<group>"; };
+		CC6D0DE769F00651D90C3221025EFE85 /* YXLInsecureStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLInsecureStorage.m; path = lib/Classes/Private/Core/Storage/YXLInsecureStorage.m; sourceTree = "<group>"; };
+		D054BBCE96206E6BBDCE4C095832B35D /* YXLJwtRequestParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLJwtRequestParams.m; path = lib/Classes/Private/Networking/RequestParams/YXLJwtRequestParams.m; sourceTree = "<group>"; };
+		D7D3E9F0F94505AFDD1F90A8E3D43BBE /* YXLResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLResponseParser.h; path = lib/Classes/Private/Networking/ResponseParser/YXLResponseParser.h; sourceTree = "<group>"; };
+		DECF1A7D81F7DA63A0F0B8C781C391DB /* YXLRequestParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLRequestParams.h; path = lib/Classes/Private/Networking/RequestParams/YXLRequestParams.h; sourceTree = "<group>"; };
+		DF97B7A02324ED03868159CB088BD716 /* YandexLoginSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YandexLoginSDK-dummy.m"; sourceTree = "<group>"; };
+		F0D26E64EA6B97206A8DD81482B64CC5 /* YXLError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXLError.m; path = lib/Classes/Public/YXLError.m; sourceTree = "<group>"; };
+		F63A3166EF56ED8F59367F88314E72C1 /* YXLHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLHTTPOperation.h; path = lib/Classes/Private/Networking/YXLHTTPOperation.h; sourceTree = "<group>"; };
+		FB8F7C452C2B88BF9055619A4154EDF6 /* Pods-LeetCodeProblems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeetCodeProblems.debug.xcconfig"; sourceTree = "<group>"; };
+		FD887AD228A96B3B5E382828FA8DCAB4 /* YXLSecureStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLSecureStorage.h; path = lib/Classes/Private/Core/Storage/YXLSecureStorage.h; sourceTree = "<group>"; };
+		FF2B9F8FBA6620CCC9A8D29A2D28FA81 /* YXLInsecureStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXLInsecureStorage.h; path = lib/Classes/Private/Core/Storage/YXLInsecureStorage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		777E443A292C6696952D346169ECF43D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9449C8ADF350BDBF3A0997E6EABE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		488924898DA954C646A23EB44B72EFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B67E3A7883BC6C726A136A7B452E31ED /* libPods-LeetCodeProblems.a */,
+				51562AF7062DE7C24ADB5D5B9F11B8BA /* libYandexLoginSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58709D858B7CEEF0EFE225D34654470D /* YandexLoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3F110A75EDE6358B16A1F72910938 /* YandexLoginSDK.h */,
+				136915745F0EE93DEEBA0116B11FE723 /* YXLActivationValidator.h */,
+				3B085085BAD77D1C3B73AB1D2531F59C /* YXLActivationValidator.m */,
+				7031BEE2DB5DDE4F3D10637DD9C80FA3 /* YXLAuthParameters.h */,
+				180400A7879A3B7E5F60F749D6CF44BF /* YXLAuthParameters.m */,
+				34F73D39954EC9FE80D8F9FACB10D3C2 /* YXLDefinitions.h */,
+				347A00A244D36568137372D9F885DA57 /* YXLError.h */,
+				F0D26E64EA6B97206A8DD81482B64CC5 /* YXLError.m */,
+				8259AE1916279F74AD87CD2238675CA0 /* YXLErrorUtils.h */,
+				657C27E63C708293F5F048055FDE7A33 /* YXLErrorUtils.m */,
+				39EE26DF208E0528089AB89CA208A56A /* YXLExecuting.h */,
+				86106802FFA8DC688A8751F138A0912C /* YXLHostProvider.h */,
+				0A26896013CCA914174458446EFFD240 /* YXLHostProvider.m */,
+				8FBFA9F14CEB19025456B0EADF8082CC /* YXLHTTPClient.h */,
+				45A0083481F538E517E36579F7692110 /* YXLHTTPClient.m */,
+				F63A3166EF56ED8F59367F88314E72C1 /* YXLHTTPOperation.h */,
+				C47D066835F99EB1B2203225ED2147CC /* YXLHTTPOperation.m */,
+				FF2B9F8FBA6620CCC9A8D29A2D28FA81 /* YXLInsecureStorage.h */,
+				CC6D0DE769F00651D90C3221025EFE85 /* YXLInsecureStorage.m */,
+				54EB4661E8BDE1438FEA27A1D113AC70 /* YXLJwtRequestParams.h */,
+				D054BBCE96206E6BBDCE4C095832B35D /* YXLJwtRequestParams.m */,
+				BE94F17CFFE12DB6139729772E954A58 /* YXLJwtResponseParser.h */,
+				11D231E799726B2FEA798EB8B0504D86 /* YXLJwtResponseParser.m */,
+				BAB6AFDCA7168E426E059A7F2183CA22 /* YXLLoginResult.h */,
+				55467FECC336C99496BFE4D03B1572B6 /* YXLLoginResultModel.h */,
+				8501C98C1FD7651EA000ECD2094539AF /* YXLLoginResultModel.m */,
+				3DFFCA70A551840FEFBE66C847BAB0DE /* YXLMainQueueAsyncExecutor.h */,
+				2C9B78356EA0342FF9A95B75C186A2FA /* YXLMainQueueAsyncExecutor.m */,
+				43D5E0081B4EF8D10F89E675BF4A91EB /* YXLObserver.h */,
+				18F15659565AD9810F642DDD023EFE1C /* YXLObserversController.h */,
+				6F740573FC513E53B9B1DD67066333F0 /* YXLObserversController.m */,
+				4A409CD8E55C61A57952EA82C7EFAD04 /* YXLPkce.h */,
+				912B26DF5FD48B160344B7C8AF9E0DDB /* YXLPkce.m */,
+				019E8F3EA97F19FBF8ABC8C8F8E1B47B /* YXLQueryUtils.h */,
+				7B316D864129DE9F2421EE73DAC610D1 /* YXLQueryUtils.m */,
+				DECF1A7D81F7DA63A0F0B8C781C391DB /* YXLRequestParams.h */,
+				D7D3E9F0F94505AFDD1F90A8E3D43BBE /* YXLResponseParser.h */,
+				9EA23A6A346DC4A18F242A1A78DA7916 /* YXLResponseParserFactory.h */,
+				7CA9D2C0061281F9340FF27603ED1A8F /* YXLResponseParserFactory.m */,
+				987DF2C5D3B03C6FB7379A09B58CCB1D /* YXLSdk.h */,
+				8B31CB593B446DB063A3EC3C8A9425B3 /* YXLSdk.m */,
+				004A6DD2C1180139CAA2C5575C691BDE /* YXLSdk+Protected.h */,
+				FD887AD228A96B3B5E382828FA8DCAB4 /* YXLSecureStorage.h */,
+				A5F984F9942305E2C767A42C0A14C3FF /* YXLSecureStorage.m */,
+				59CBAAEA95E5605F28E5C4B7BD126F17 /* YXLSessionManager.h */,
+				61AE3292B9F3BE11BF2C5A6232BD6F7A /* YXLSessionManager.m */,
+				4A4E898D06FFDF0E278F09109821E7F2 /* YXLStatesManager.h */,
+				5DAA5335B480472DD3BD86D13001BE40 /* YXLStatesManager.m */,
+				8C8FBB6A263F99AFF305979352620E53 /* YXLStatisticsDataProvider.h */,
+				3D5A452BD4DA694799D2DA6CB94F1744 /* YXLStatisticsDataProvider.m */,
+				54AA4BBAAB9576D6939C70F0C58C3142 /* YXLStorage.h */,
+				59174EBA9530E9466F799C248874865C /* YXLStorageFactory.h */,
+				BB79FDC8C646CD7CF9E44144856FFC2C /* YXLStorageFactory.m */,
+				3B1CC4B25B7D3C9F0F94C2ECEE394369 /* YXLTokenRequestParams.h */,
+				2DF983800FEAE431BE76C22ADF913B64 /* YXLTokenRequestParams.m */,
+				8C5BC12994DF28361447A61789F8AC40 /* YXLTokenResponseParser.h */,
+				B2146171F8B8F129707232CB42D1D517 /* YXLTokenResponseParser.m */,
+				9B0D8996E05E04DBC199FB3C7420DAB9 /* YXLURLParser.h */,
+				295988805A42A7AE3E3D67BCBF2E41F8 /* YXLURLParser.m */,
+				9016B611CB072BA7AD599CBE36B59906 /* Support Files */,
+			);
+			path = YandexLoginSDK;
+			sourceTree = "<group>";
+		};
+		9016B611CB072BA7AD599CBE36B59906 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF97B7A02324ED03868159CB088BD716 /* YandexLoginSDK-dummy.m */,
+				496CADF85F211AE300151FDE4B7E13C9 /* YandexLoginSDK-prefix.pch */,
+				26BD5F26C0345532DA338367A13F4324 /* YandexLoginSDK.debug.xcconfig */,
+				2225CCC19F7B1DCAB881598CD3863E20 /* YandexLoginSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YandexLoginSDK";
+			sourceTree = "<group>";
+		};
+		B582B0FBC018918D57A50BDE74076D86 /* Pods-LeetCodeProblems */ = {
+			isa = PBXGroup;
+			children = (
+				C63421038883C103D5C668BBDF0406AC /* Pods-LeetCodeProblems-acknowledgements.markdown */,
+				30981C5DD2FDD7FCA03DFEB04DD73076 /* Pods-LeetCodeProblems-acknowledgements.plist */,
+				C6D48DFD574BFD692006E65CD2904D53 /* Pods-LeetCodeProblems-dummy.m */,
+				FB8F7C452C2B88BF9055619A4154EDF6 /* Pods-LeetCodeProblems.debug.xcconfig */,
+				A646BE3C1C26E42BC60BF150EB4267A2 /* Pods-LeetCodeProblems.release.xcconfig */,
+			);
+			name = "Pods-LeetCodeProblems";
+			path = "Target Support Files/Pods-LeetCodeProblems";
+			sourceTree = "<group>";
+		};
+		B8B766FB4093B31FD5D7E14D95A48F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58709D858B7CEEF0EFE225D34654470D /* YandexLoginSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C02CB77325FD5CAE71FE3C2E6FD06EE1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B582B0FBC018918D57A50BDE74076D86 /* Pods-LeetCodeProblems */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				B8B766FB4093B31FD5D7E14D95A48F4A /* Pods */,
+				488924898DA954C646A23EB44B72EFBA /* Products */,
+				C02CB77325FD5CAE71FE3C2E6FD06EE1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60A89996F497F420BD1477BE2A42672A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0BBE62A00000CE4C5F70EC97BD5F99 /* YandexLoginSDK.h in Headers */,
+				7ECF9C5742E6565CCA9C7815ACC3A291 /* YXLActivationValidator.h in Headers */,
+				61286354BD95D7A1725FB14F5CEBE7FA /* YXLAuthParameters.h in Headers */,
+				E6E21C2D34D38A72F894378272D23BAF /* YXLDefinitions.h in Headers */,
+				E5243DED51F0DEA9B68CAB13B4B16089 /* YXLError.h in Headers */,
+				ABC9088DFC766F642F5FE5EF5A9A5230 /* YXLErrorUtils.h in Headers */,
+				11EA0BACB4DE956CABEC5A94AAF295EA /* YXLExecuting.h in Headers */,
+				D0DC0C23B07DBEEC302DFD90FCFF00C6 /* YXLHostProvider.h in Headers */,
+				6DFA88BE851EA204264E951982B77D09 /* YXLHTTPClient.h in Headers */,
+				B748E3B06829242A99AFC2408FB92725 /* YXLHTTPOperation.h in Headers */,
+				198F47E5F3688AF27F2BE0CF1540CD20 /* YXLInsecureStorage.h in Headers */,
+				2291A6D03C2F1A50EDDF18F59C208562 /* YXLJwtRequestParams.h in Headers */,
+				E99AC7A60772E6918F5D9326FA19A3CA /* YXLJwtResponseParser.h in Headers */,
+				8CDF77742F34DCD29C9CDE44F288A303 /* YXLLoginResult.h in Headers */,
+				C6225015860C1634BDCB83EF9C63E82E /* YXLLoginResultModel.h in Headers */,
+				FA032C8F0023B15001E954673A080268 /* YXLMainQueueAsyncExecutor.h in Headers */,
+				45CF72A6B3191052BFBEB205E76C32B8 /* YXLObserver.h in Headers */,
+				68BCB4B871F84A6DD600F9521D1BF8E0 /* YXLObserversController.h in Headers */,
+				149B0890A97FE0CB485B1E08A2AD90FA /* YXLPkce.h in Headers */,
+				0DEAAFDE53FE88BBCD2AE030DF033977 /* YXLQueryUtils.h in Headers */,
+				7BBCF3D809A889B9FBC87FB7C9FF71C5 /* YXLRequestParams.h in Headers */,
+				1C4238A724F0156EF4E3BB38705C2002 /* YXLResponseParser.h in Headers */,
+				27BE755A0DBCA93FC7A9A6A460A0BAB6 /* YXLResponseParserFactory.h in Headers */,
+				FDAF7ED8A7E2503BD4A8E80FF9DC10FC /* YXLSdk.h in Headers */,
+				960979F3966BE5DEA1A5204A2DA0E05D /* YXLSdk+Protected.h in Headers */,
+				58A58F7DF79AF895DF1B67C154DF9B87 /* YXLSecureStorage.h in Headers */,
+				5820897F42C456F50538419E4E42A2FF /* YXLSessionManager.h in Headers */,
+				083B4F8CCF70F2318B0AB713A62357C3 /* YXLStatesManager.h in Headers */,
+				ADAF61F9DB56690C21DA9504B7A66A80 /* YXLStatisticsDataProvider.h in Headers */,
+				7E4EE25DB5A380259186E774BC1EFC16 /* YXLStorage.h in Headers */,
+				8F1F2835F64022D12251FD7D95262F83 /* YXLStorageFactory.h in Headers */,
+				F5B0AD1AEA49A70D8D74FD35030ACD23 /* YXLTokenRequestParams.h in Headers */,
+				B1AF5B1EE7A83FC16F22E0936E6E5082 /* YXLTokenResponseParser.h in Headers */,
+				BF0AFFBCA30FAE9A4DA35178177F65EC /* YXLURLParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6463263BFF5772AC3FABC919D73C2EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		67292D93F26EE8AF07FA75C8759F0F2E /* Pods-LeetCodeProblems */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5555DC8D2147D49C364B1544C18C1EF9 /* Build configuration list for PBXNativeTarget "Pods-LeetCodeProblems" */;
+			buildPhases = (
+				A6463263BFF5772AC3FABC919D73C2EA /* Headers */,
+				3F5D57E4AD1BD823AD8C2D0C0945DDC3 /* Sources */,
+				777E443A292C6696952D346169ECF43D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B6542FC801597E0CD31CB70B8D35F88 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeetCodeProblems";
+			productName = "Pods-LeetCodeProblems";
+			productReference = B67E3A7883BC6C726A136A7B452E31ED /* libPods-LeetCodeProblems.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8CBD3958D57403F0295E562A15B39C0 /* YandexLoginSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE94823CE6520B5009C41CEFF833286C /* Build configuration list for PBXNativeTarget "YandexLoginSDK" */;
+			buildPhases = (
+				60A89996F497F420BD1477BE2A42672A /* Headers */,
+				2CD28CE189544ADBB9E0F146CAF2607C /* Sources */,
+				BC9449C8ADF350BDBF3A0997E6EABE36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexLoginSDK;
+			productName = YandexLoginSDK;
+			productReference = 51562AF7062DE7C24ADB5D5B9F11B8BA /* libYandexLoginSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 488924898DA954C646A23EB44B72EFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67292D93F26EE8AF07FA75C8759F0F2E /* Pods-LeetCodeProblems */,
+				B8CBD3958D57403F0295E562A15B39C0 /* YandexLoginSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD28CE189544ADBB9E0F146CAF2607C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908A4406C7126A36987893FF6B8CDC71 /* YandexLoginSDK-dummy.m in Sources */,
+				38BDB1BCD3534E00CEEAEB1F34222ED0 /* YXLActivationValidator.m in Sources */,
+				50B7727C02292C51C9A6D4CD32C6CE55 /* YXLAuthParameters.m in Sources */,
+				B8ED34BC9DCFC97B1CD2911D48BEF95C /* YXLError.m in Sources */,
+				7345BF7C04B1E49309CA3C9C7416002E /* YXLErrorUtils.m in Sources */,
+				DD725286425C5577811CEAFCFE285350 /* YXLHostProvider.m in Sources */,
+				BC982F579A0CD7933A045001AD7F38B2 /* YXLHTTPClient.m in Sources */,
+				CB0A3F3F61A690579E1C51483C29A216 /* YXLHTTPOperation.m in Sources */,
+				4BE4289C4E24AD2CF0F59CC1316A9FEB /* YXLInsecureStorage.m in Sources */,
+				C85D1D62372D343B21E0568D156483E9 /* YXLJwtRequestParams.m in Sources */,
+				D38D182DE031721A16D40688CEDD9C47 /* YXLJwtResponseParser.m in Sources */,
+				64E1F384FD44911A8E0A82BEE0EA1C5E /* YXLLoginResultModel.m in Sources */,
+				A9A0B8C624F73AB19E0FE3EECC7C03F5 /* YXLMainQueueAsyncExecutor.m in Sources */,
+				BA8FF7FB8C58BA931B0E36DE771DC2BF /* YXLObserversController.m in Sources */,
+				F1BAF01FB586983525D44A8181902B4C /* YXLPkce.m in Sources */,
+				E955176312E942A60476C7E7EAE65E12 /* YXLQueryUtils.m in Sources */,
+				BDB501881F9FCC9D6C352A9B61D70352 /* YXLResponseParserFactory.m in Sources */,
+				7EB21239C39207509BB38EC838E8AEC9 /* YXLSdk.m in Sources */,
+				C73EEF160479DE9825FE74D7827FFB02 /* YXLSecureStorage.m in Sources */,
+				A58D9824E76165F6F3F352EDFA6DBE01 /* YXLSessionManager.m in Sources */,
+				409E8B14B809329D89D42BD8661255CD /* YXLStatesManager.m in Sources */,
+				825040CB1C81C535E5375544EDA12BC5 /* YXLStatisticsDataProvider.m in Sources */,
+				BDB3B75DF6ABAA009BF256071AA8B722 /* YXLStorageFactory.m in Sources */,
+				514C7C8F5C31ECEEE3B454B00750C36E /* YXLTokenRequestParams.m in Sources */,
+				38F00E65E32643F4C3BC209F730D18FD /* YXLTokenResponseParser.m in Sources */,
+				B9C697F429C7DBE4D20BFA3B06D966F6 /* YXLURLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5D57E4AD1BD823AD8C2D0C0945DDC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0EED4C6CCE856607FE9FD850A54A9D /* Pods-LeetCodeProblems-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B6542FC801597E0CD31CB70B8D35F88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YandexLoginSDK;
+			target = B8CBD3958D57403F0295E562A15B39C0 /* YandexLoginSDK */;
+			targetProxy = 9366632951F0319DF6D50EFA5F4704AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52433CFE581C2A695BA15AFBEA210F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2225CCC19F7B1DCAB881598CD3863E20 /* YandexLoginSDK.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YandexLoginSDK/YandexLoginSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YandexLoginSDK;
+				PRODUCT_NAME = YandexLoginSDK;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C98B09FF5CCB107837D1A84E8F3A4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7446CC2795BD0B7FCF66AA3416A35789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8F7C452C2B88BF9055619A4154EDF6 /* Pods-LeetCodeProblems.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E6A8FF58D100B7F9B1943F455C00F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F58C89A244951081519F927D98A49677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A646BE3C1C26E42BC60BF150EB4267A2 /* Pods-LeetCodeProblems.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6A08173B4A79E41985B4D69E778D1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BD5F26C0345532DA338367A13F4324 /* YandexLoginSDK.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YandexLoginSDK/YandexLoginSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YandexLoginSDK;
+				PRODUCT_NAME = YandexLoginSDK;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6A8FF58D100B7F9B1943F455C00F02 /* Debug */,
+				6C98B09FF5CCB107837D1A84E8F3A4F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5555DC8D2147D49C364B1544C18C1EF9 /* Build configuration list for PBXNativeTarget "Pods-LeetCodeProblems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7446CC2795BD0B7FCF66AA3416A35789 /* Debug */,
+				F58C89A244951081519F927D98A49677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE94823CE6520B5009C41CEFF833286C /* Build configuration list for PBXNativeTarget "YandexLoginSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A08173B4A79E41985B4D69E778D1BC /* Debug */,
+				52433CFE581C2A695BA15AFBEA210F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
