@@ -4,9 +4,10 @@
 <dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>yandexauth</string>
-		<string>yandexauth2</string>
-		<string>yandexauth4</string>
+		<string>msauthv2</string>
+		<string>msauthv3</string>
+		<string>dbapi-8-emm</string>
+		<string>dbapi-2</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
@@ -15,7 +16,23 @@
 			<string>YandexLoginSDK</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>yxfe3f41ba6aff4b8180ea470cc43f9805&gt;</string>
+				<string>yxfe3f41ba6aff4b8180ea470cc43f9805</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>OneDriveLoginSDK</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>msauth.home.LeetCodeProblems</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>DropBoxLoginSDK</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>db-0x1vbxaklvuouqb</string>
 			</array>
 		</dict>
 	</array>

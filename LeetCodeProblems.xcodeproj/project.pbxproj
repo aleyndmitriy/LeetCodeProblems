@@ -720,6 +720,7 @@
 				DEVELOPMENT_TEAM = 79E756PTBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LeetCodeProblems;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -750,6 +751,7 @@
 				DEVELOPMENT_TEAM = 79E756PTBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LeetCodeProblems;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

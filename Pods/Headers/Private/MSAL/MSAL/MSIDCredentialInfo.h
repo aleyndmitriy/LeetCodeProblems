@@ -1,0 +1,1 @@
+../../../../MSAL/MSAL/IdentityCore/IdentityCore/src/broker_operation/response/sso_cookies_response/MSIDCredentialInfo.h
