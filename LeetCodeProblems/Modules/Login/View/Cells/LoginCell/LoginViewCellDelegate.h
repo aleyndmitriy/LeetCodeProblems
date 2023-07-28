@@ -9,9 +9,9 @@
 #define LoginViewCellDelegate_h
 #import "LoginService.h"
 @protocol LoginViewCellDelegate <NSObject>
--(void) logInToService:(RemoteServiceType)serviceType;
--(void) logOutFromService:(RemoteServiceType)serviceType;
--(void) loadStorage:(RemoteServiceType)serviceType;
+-(void) logInToService;
+-(void) logOutFromService;
+-(void) loadStorage;
 
 @end
 

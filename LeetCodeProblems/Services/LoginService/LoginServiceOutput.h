@@ -9,7 +9,6 @@
 #define LoginServiceOutput_h
 @protocol LoginServiceOutput <NSObject>
 
-
 @end
 
 #endif /* LoginServiceOutput_h */

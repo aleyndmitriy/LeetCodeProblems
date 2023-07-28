@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class UserProfileData;
 const NSInteger ServicesCount = 3;
 
 typedef NS_ENUM(NSUInteger, RemoteServiceType)
@@ -29,9 +30,11 @@ typedef NS_ENUM(BOOL, RemoteServiceAuthState)
 };
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginService : NSObject
-+(LoginService*)loginServiceWithType:(RemoteServiceType)type;
-
+@protocol LoginService<NSObject>
+@property (readwrite, copy, nullable) UserProfileData* userData;
+-(void)signIn;
+-(void)signOut;
+-(BOOL)shareUrl:(nonnull NSURL*)url withKey:(nullable NSString*)key;
 @end
 
 NS_ASSUME_NONNULL_END

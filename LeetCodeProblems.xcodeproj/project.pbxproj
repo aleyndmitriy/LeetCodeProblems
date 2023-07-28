@@ -18,7 +18,6 @@
 		FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */; };
 		FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE57C52C29E89A6000DC3ABE /* UserProfileData.m */; };
 		FE8ABB932A655CB6009584D7 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8ABB922A655CB6009584D7 /* libxml2.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
-		FE965EF929EF0F9C00A8402A /* LoginYandexPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */; };
 		FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B0F29D7007B0013B85F /* AppDelegate.m */; };
 		FE971B1329D7007B0013B85F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B1229D7007B0013B85F /* SceneDelegate.m */; };
 		FE971B1629D7007B0013B85F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B1529D7007B0013B85F /* MainViewController.m */; };
@@ -31,13 +30,14 @@
 		FE97A08229DB53DF00048A06 /* MainViewRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A08129DB53DF00048A06 /* MainViewRouter.m */; };
 		FE97A08529DB569800048A06 /* MainViewModuleInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97A08429DB569800048A06 /* MainViewModuleInitializer.m */; };
 		FE98F92629E5E0B3007916BE /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE98F92529E5E0B3007916BE /* LoginService.m */; };
-		FE98F92A29E5E2FF007916BE /* LoginYandexService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE98F92929E5E2FF007916BE /* LoginYandexService.m */; };
 		FE9CBEE22A0BAD2C005B00ED /* CPPUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9CBEE02A0BAD2C005B00ED /* CPPUtils.cpp */; };
 		FE9CBEE92A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9CBEE72A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp */; };
 		FE9F160029E417D800872139 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F15FF29E417D800872139 /* LoginViewController.m */; };
 		FE9F160229E417F700872139 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9F160129E417F700872139 /* Login.storyboard */; };
 		FE9F160729E4217700872139 /* LoginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F160629E4217700872139 /* LoginViewCell.m */; };
 		FEA0683E2A0D348C00D9D72C /* SQLiteConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */; };
+		FEEBAC522A73AC6B00B91904 /* YandexLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAC512A73AC6B00B91904 /* YandexLoginService.m */; };
+		FEEBAC562A73C00200B91904 /* OneDriveLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAC552A73C00200B91904 /* OneDriveLoginService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,8 +73,6 @@
 		FE8ABB902A654ECD009584D7 /* LoginServiceOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginServiceOutput.h; sourceTree = "<group>"; };
 		FE8ABB922A655CB6009584D7 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		FE8ABB942A656F33009584D7 /* LoginViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewCellDelegate.h; sourceTree = "<group>"; };
-		FE965EF729EF0F9C00A8402A /* LoginYandexPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginYandexPresenter.h; sourceTree = "<group>"; };
-		FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginYandexPresenter.m; sourceTree = "<group>"; };
 		FE971B0B29D7007B0013B85F /* LeetCodeProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE971B0E29D7007B0013B85F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE971B0F29D7007B0013B85F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,8 +98,6 @@
 		FE97A08429DB569800048A06 /* MainViewModuleInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModuleInitializer.m; sourceTree = "<group>"; };
 		FE98F92429E5E0B3007916BE /* LoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
 		FE98F92529E5E0B3007916BE /* LoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
-		FE98F92829E5E2FF007916BE /* LoginYandexService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginYandexService.h; sourceTree = "<group>"; };
-		FE98F92929E5E2FF007916BE /* LoginYandexService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginYandexService.m; sourceTree = "<group>"; };
 		FE9CBEE02A0BAD2C005B00ED /* CPPUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPPUtils.cpp; sourceTree = "<group>"; };
 		FE9CBEE12A0BAD2C005B00ED /* CPPUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPPUtils.hpp; sourceTree = "<group>"; };
 		FE9CBEE52A0C14D7005B00ED /* IUserProfileDAO.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IUserProfileDAO.hpp; sourceTree = "<group>"; };
@@ -115,6 +111,10 @@
 		FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SQLiteConstants.c; sourceTree = "<group>"; };
 		FEA798B72A03C6FA0012617C /* CUserProfileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUserProfileData.h; sourceTree = "<group>"; };
 		FEA798B82A03C7D60012617C /* ServicesConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesConsts.h; sourceTree = "<group>"; };
+		FEEBAC502A73AC6B00B91904 /* YandexLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexLoginService.h; sourceTree = "<group>"; };
+		FEEBAC512A73AC6B00B91904 /* YandexLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YandexLoginService.m; sourceTree = "<group>"; };
+		FEEBAC542A73C00200B91904 /* OneDriveLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneDriveLoginService.h; sourceTree = "<group>"; };
+		FEEBAC552A73C00200B91904 /* OneDriveLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneDriveLoginService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +325,6 @@
 				FEA798B82A03C7D60012617C /* ServicesConsts.h */,
 				FE57C52E29E89A7400DC3ABE /* UserProfile */,
 				FE98F92329E5D319007916BE /* LoginService */,
-				FE98F92729E5E2A3007916BE /* LoginYandexService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -333,20 +332,14 @@
 		FE98F92329E5D319007916BE /* LoginService */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBAC572A74003900B91904 /* DropBoxLoginService */,
+				FEEBAC532A73BFC300B91904 /* OneDriveLoginService */,
+				FEEBAC4F2A73AC2F00B91904 /* YandexLoginService */,
 				FE98F92429E5E0B3007916BE /* LoginService.h */,
 				FE98F92529E5E0B3007916BE /* LoginService.m */,
 				FE8ABB902A654ECD009584D7 /* LoginServiceOutput.h */,
 			);
 			path = LoginService;
-			sourceTree = "<group>";
-		};
-		FE98F92729E5E2A3007916BE /* LoginYandexService */ = {
-			isa = PBXGroup;
-			children = (
-				FE98F92829E5E2FF007916BE /* LoginYandexService.h */,
-				FE98F92929E5E2FF007916BE /* LoginYandexService.m */,
-			);
-			path = LoginYandexService;
 			sourceTree = "<group>";
 		};
 		FE9CBEE32A0C1483005B00ED /* UserProfileDAO */ = {
@@ -404,7 +397,6 @@
 		FE9F15FB29E412A600872139 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				FEBA390D29EDEA0500D0C34E /* YandexPresenter */,
 				FE0482A329FBDA7C00FCFAA8 /* LoginViewPresenter.h */,
 				FE0482A429FBDA7C00FCFAA8 /* LoginViewPresenter.m */,
 			);
@@ -442,13 +434,29 @@
 			path = LoginCell;
 			sourceTree = "<group>";
 		};
-		FEBA390D29EDEA0500D0C34E /* YandexPresenter */ = {
+		FEEBAC4F2A73AC2F00B91904 /* YandexLoginService */ = {
 			isa = PBXGroup;
 			children = (
-				FE965EF729EF0F9C00A8402A /* LoginYandexPresenter.h */,
-				FE965EF829EF0F9C00A8402A /* LoginYandexPresenter.m */,
+				FEEBAC502A73AC6B00B91904 /* YandexLoginService.h */,
+				FEEBAC512A73AC6B00B91904 /* YandexLoginService.m */,
 			);
-			path = YandexPresenter;
+			path = YandexLoginService;
+			sourceTree = "<group>";
+		};
+		FEEBAC532A73BFC300B91904 /* OneDriveLoginService */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBAC542A73C00200B91904 /* OneDriveLoginService.h */,
+				FEEBAC552A73C00200B91904 /* OneDriveLoginService.m */,
+			);
+			path = OneDriveLoginService;
+			sourceTree = "<group>";
+		};
+		FEEBAC572A74003900B91904 /* DropBoxLoginService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DropBoxLoginService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEBAC522A73AC6B00B91904 /* YandexLoginService.m in Sources */,
 				FE9F160729E4217700872139 /* LoginViewCell.m in Sources */,
 				FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */,
 				FE97A08529DB569800048A06 /* MainViewModuleInitializer.m in Sources */,
@@ -557,13 +566,12 @@
 				FE971B1629D7007B0013B85F /* MainViewController.m in Sources */,
 				FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */,
 				FE24862029E9CD96008044FA /* Utils.m in Sources */,
-				FE965EF929EF0F9C00A8402A /* LoginYandexPresenter.m in Sources */,
 				FE971B2129D7007C0013B85F /* main.m in Sources */,
 				FE04829E29FBCA5800FCFAA8 /* LoginViewRouter.m in Sources */,
 				FE0482A529FBDA7C00FCFAA8 /* LoginViewPresenter.m in Sources */,
 				FE0482AC29FE5D2900FCFAA8 /* SQLiteDataBase.cpp in Sources */,
-				FE98F92A29E5E2FF007916BE /* LoginYandexService.m in Sources */,
 				FE98F92629E5E0B3007916BE /* LoginService.m in Sources */,
+				FEEBAC562A73C00200B91904 /* OneDriveLoginService.m in Sources */,
 				FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */,
 				FE9CBEE92A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp in Sources */,
 				FE9F160029E417D800872139 /* LoginViewController.m in Sources */,

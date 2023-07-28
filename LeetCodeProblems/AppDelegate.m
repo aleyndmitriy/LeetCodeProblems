@@ -9,7 +9,8 @@
 
 #import "LoginViewModuleInitializer.h"
 #import "LoginViewController.h"
-NSString* appIdClientId = @"fe3f41ba6aff4b8180ea470cc43f9805";
+NSString* appIdYandexClientId = @"fe3f41ba6aff4b8180ea470cc43f9805";
+NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
 @interface AppDelegate ()
 
 @end
@@ -25,9 +26,10 @@ NSString* appIdClientId = @"fe3f41ba6aff4b8180ea470cc43f9805";
     @try {
         LoginViewController* controller = [LoginViewModuleInitializer createLoginViewController];
         NSError* initError = nil;
-        [YXLSdk.shared activateWithAppId:appIdClientId error:&initError];
+        [YXLSdk.shared activateWithAppId:appIdYandexClientId error:&initError];
         NSLog(@"Error\nName-> %@\nDescription-> %@", [initError localizedRecoverySuggestion],
                 [initError localizedDescription]);
+        [DBClientsManager setupWithAppKey:appIdDropBoxClientId];
         [navController pushViewController:controller animated:YES];
         } @catch (NSException *exception) {
             NSLog(@"EXCEPTION\nName-> %@\nDescription-> %@", [exception name],
@@ -46,7 +48,24 @@ NSString* appIdClientId = @"fe3f41ba6aff4b8180ea470cc43f9805";
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
     NSString* key = options[UIApplicationOpenURLOptionsSourceApplicationKey];
-    return [YXLSdk.shared handleOpenURL:url sourceApplication:key];
+    if([YXLSdk.shared handleOpenURL:url sourceApplication:key]) {
+        NSLog(@"This URL is handled by Yandex");
+    }
+    DBOAuthCompletion completion = ^(DBOAuthResult *authResult) {
+        if (authResult != nil) {
+          if ([authResult isSuccess]) {
+            NSLog(@"\n\nSuccess! User is logged into Dropbox.\n\n");
+          } else if ([authResult isCancel]) {
+            NSLog(@"\n\nAuthorization flow was manually canceled by user!\n\n");
+          } else if ([authResult isError]) {
+            NSLog(@"\n\nError: %@\n\n", authResult);
+          }
+        }
+      };
+    if([DBClientsManager handleRedirectURL:url completion:completion]) {
+        NSLog(@"This URL is handled by DropBox");
+    }
+    return YES;
 }
 #pragma mark - UISceneSession lifecycle
 

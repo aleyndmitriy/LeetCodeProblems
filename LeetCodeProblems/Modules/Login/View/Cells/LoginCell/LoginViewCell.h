@@ -18,7 +18,6 @@ LCLoginState const LCLoginStateOut = @"LogOut";
 LCLoginState const LCLoginStateProcessing = @"Processing...";
 
 @interface LoginViewCell: UITableViewCell
-@property (nonatomic, assign) RemoteServiceType serviceType;
 @property (nonatomic, assign) RemoteServiceAuthState loggedState;
 @property (nonatomic, assign) ProcessProgress loginProcess;
 @property (nonatomic, strong) id<LoginViewCellDelegate> cellDelegate;

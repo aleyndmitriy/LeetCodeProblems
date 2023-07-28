@@ -39,14 +39,14 @@
 }
 - (IBAction)btnLoginTouched:(UIButton *)sender {
     if(_loggedState == SignIn) {
-        [_cellDelegate logOutFromService:_serviceType];
+        [_cellDelegate logOutFromService];
     } else {
-        [_cellDelegate logInToService:_serviceType];
+        [_cellDelegate logInToService];
     }
 }
 
 - (IBAction)btnLoadFoldersTouched:(UIButton *)sender {
-    
+    [_cellDelegate loadStorage];
 }
 
 -(void) labelText:(NSString* _Nonnull)text imageName:(NSString* _Nonnull)imgName

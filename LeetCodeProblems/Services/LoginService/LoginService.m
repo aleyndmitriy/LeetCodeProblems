@@ -6,9 +6,8 @@
 //
 
 #import "LoginService.h"
-#import "LoginYandexService.h"
 
-@implementation LoginService
+/*@implementation LoginService
 +(LoginService*)loginServiceWithType:(RemoteServiceType)type
 {
     switch(type) {
@@ -26,3 +25,4 @@
 }
 
 @end
+*/
