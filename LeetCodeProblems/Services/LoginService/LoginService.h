@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 @class UserProfileData;
-const NSInteger ServicesCount = 3;
+OBJC_EXTERN const NSInteger ServicesCount;
 
 typedef NS_ENUM(NSUInteger, RemoteServiceType)
 {

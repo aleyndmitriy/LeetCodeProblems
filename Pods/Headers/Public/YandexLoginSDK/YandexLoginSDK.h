@@ -1,1 +1,0 @@
-../../../YandexLoginSDK/lib/Classes/YandexLoginSDK.h

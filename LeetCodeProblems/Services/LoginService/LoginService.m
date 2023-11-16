@@ -7,6 +7,7 @@
 
 #import "LoginService.h"
 
+const NSInteger ServicesCount = 3;
 /*@implementation LoginService
 +(LoginService*)loginServiceWithType:(RemoteServiceType)type
 {

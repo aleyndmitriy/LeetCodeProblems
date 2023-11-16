@@ -1,0 +1,6 @@
+module YandexLoginSDK {
+  umbrella header "YandexLoginSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

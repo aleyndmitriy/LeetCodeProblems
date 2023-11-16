@@ -9,6 +9,8 @@
 
 #import "LoginViewModuleInitializer.h"
 #import "LoginViewController.h"
+#import <openssl/opensslconf.h>
+#import <openssl/ssl.h>
 NSString* appIdYandexClientId = @"fe3f41ba6aff4b8180ea470cc43f9805";
 NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
 @interface AppDelegate ()
@@ -19,6 +21,7 @@ NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    SSL_library_init();
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     UINavigationController* navController = [[UINavigationController alloc]init];
     self.window.rootViewController = navController;
@@ -51,20 +54,7 @@ NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
     if([YXLSdk.shared handleOpenURL:url sourceApplication:key]) {
         NSLog(@"This URL is handled by Yandex");
     }
-    DBOAuthCompletion completion = ^(DBOAuthResult *authResult) {
-        if (authResult != nil) {
-          if ([authResult isSuccess]) {
-            NSLog(@"\n\nSuccess! User is logged into Dropbox.\n\n");
-          } else if ([authResult isCancel]) {
-            NSLog(@"\n\nAuthorization flow was manually canceled by user!\n\n");
-          } else if ([authResult isError]) {
-            NSLog(@"\n\nError: %@\n\n", authResult);
-          }
-        }
-      };
-    if([DBClientsManager handleRedirectURL:url completion:completion]) {
-        NSLog(@"This URL is handled by DropBox");
-    }
+    
     return YES;
 }
 #pragma mark - UISceneSession lifecycle

@@ -12,13 +12,16 @@
 #import <string>
 #import <memory>
 #include "CPPUtils.hpp"
-
+#import <shared_mutex>
+#import <concepts>
+#import <future>
 class SQLiteDataBase final
 {
 private:
     std::string databasePath;
     sqlite3* sqliteDatabase;
     int databaseVersion;
+    mutable std::shared_mutex smtx;
     void clean();
     int createUsersTables(std::string& createError);
 public:
@@ -33,5 +36,12 @@ public:
     int CommitTransaction(std::string& transactError);
     int RollbackTransaction(std::string& transactError);
     void GetError(std::string& transactError);
+    template<typename... Arguments, std::invocable<Arguments...>Func> typename std::invoke_result<Func, Arguments...>::type getData(Func&& f, Arguments&&... args);
 };
+
+template<typename... Arguments, std::invocable<Arguments...>Func> typename std::invoke_result<Func, Arguments...>::type SQLiteDataBase::getData(Func&& f, Arguments&&... args) {
+    std::shared_lock<std::shared_mutex> lock(smtx);
+    typename std::invoke_result<Func,std::string&, int&>::type res = f();
+    return res;
+}
 #endif /* SQLiteDataBase_hpp */

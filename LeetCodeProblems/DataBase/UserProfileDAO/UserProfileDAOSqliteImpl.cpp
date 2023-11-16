@@ -10,12 +10,12 @@
 #import <string>
 #import <cstring>
 
-UserProfileDAOSqliteImpl::UserProfileDAOSqliteImpl(std::shared_ptr<SQLiteDataBase> database):_database(database) {
+UserProfileDAOSqliteImpl::UserProfileDAOSqliteImpl(SQLiteDataBase* database):_database(database) {
     
 }
 
 UserProfileDAOSqliteImpl::~UserProfileDAOSqliteImpl() {
-    _database.reset();
+    _database = nullptr;
 }
 
 int UserProfileDAOSqliteImpl::bindUserProfile(sqlite3_stmt* &stmt, const CUserProfileData& user, std::string& databaseError) {
@@ -87,26 +87,25 @@ int UserProfileDAOSqliteImpl::bindUserProfile(sqlite3_stmt* &stmt, const CUserPr
     return state;
 }
 
-int UserProfileDAOSqliteImpl::SaveUserProfile(const CUserProfileData& user) {
+void UserProfileDAOSqliteImpl::SaveUserProfile(const CUserProfileData& user, std::string& err, int& state) {
     std::string query = getFormatingString("INSERT OR REPLACE INTO %s (%s, %s, %s, %s, %s, %s, %s, %s) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", Db_UserProfile_Table, Db_Field_AccessToken, Db_Field_UserId, Db_Field_GivenName, Db_Field_Phone, Db_Field_Email, Db_Field_Name, Db_Field_FamilyName, Db_Field_ServiceType);
-    std::string err;
-    int state = _database->StartTransaction(err);
+    state = _database->StartTransaction(err);
     if(state != SQLITE_OK) {
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     sqlite3_stmt *stmt_save = nullptr;
     state = _database->PrepareSQLquery(query, stmt_save, err);
     if(state != SQLITE_OK || stmt_save == nullptr ) {
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = bindUserProfile(stmt_save,user,err);
     if(state != SQLITE_OK) {
         sqlite3_reset(stmt_save);
         sqlite3_finalize(stmt_save);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_step(stmt_save);
     if (state != SQLITE_DONE) {
@@ -114,61 +113,59 @@ int UserProfileDAOSqliteImpl::SaveUserProfile(const CUserProfileData& user) {
         sqlite3_reset(stmt_save);
         sqlite3_finalize(stmt_save);
         _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_reset(stmt_save);
     if(state != SQLITE_OK) {
         _database->GetError(err);
         sqlite3_finalize(stmt_save);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_finalize(stmt_save);
     if(state != SQLITE_OK) {
         _database->GetError(err);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = _database->CommitTransaction(err);
     _database->GetError(err);
-    return state;
 }
 
-std::optional<CUserProfileData> UserProfileDAOSqliteImpl::GetUserProfile(int type) {
+void UserProfileDAOSqliteImpl::GetUserProfile(CUserProfileData& user, std::string& err, int& state, int type) {
     std::string query = getFormatingString("SELECT %s, %s, %s, %s, %s, %s, %s, %s FROM %s WHERE %s = ?", Db_Field_AccessToken, Db_Field_UserId, Db_Field_GivenName, Db_Field_Phone, Db_Field_Email, Db_Field_Name, Db_Field_FamilyName, Db_Field_ServiceType, Db_UserProfile_Table, Db_Field_ServiceType);
-    std::string err;
     sqlite3_stmt *stmt_get = nullptr;
-    int state = _database->PrepareSQLquery(query, stmt_get, err);
+    state = _database->PrepareSQLquery(query, stmt_get, err);
     if(state != SQLITE_OK) {
-        return std::nullopt;
+        return;
     }
     state = sqlite3_bind_int(stmt_get, 1, type);
     if(state != SQLITE_OK) {
         sqlite3_reset(stmt_get);
         sqlite3_finalize(stmt_get);
-        return std::nullopt;
+        return;
     }
-    CUserProfileData user;
     std::memset(&user, '\0', sizeof(CUserProfileData));
-    state = getUserProfile(stmt_get,user,err);
+    state = fetchUserProfile(stmt_get,user,err);
     if(state != SQLITE_DONE) {
         sqlite3_reset(stmt_get);
         sqlite3_finalize(stmt_get);
-        return std::nullopt;
+        std::memset(&user, '\0', sizeof(CUserProfileData));
+        return;
     }
     state = sqlite3_reset(stmt_get);
     if(state != SQLITE_OK) {
         sqlite3_finalize(stmt_get);
-        return std::nullopt;
+        std::memset(&user, '\0', sizeof(CUserProfileData));
+        return;
     }
     state = sqlite3_finalize(stmt_get);
     if(state != SQLITE_OK) {
-        return std::nullopt;
+        std::memset(&user, '\0', sizeof(CUserProfileData));
     }
-    return user;
 }
 
-int UserProfileDAOSqliteImpl::getUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError) {
+int UserProfileDAOSqliteImpl::fetchUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError) {
     int state = sqlite3_step(stmt);
     if(state != SQLITE_DONE || state != SQLITE_ROW) {
         return state;
@@ -237,45 +234,43 @@ int UserProfileDAOSqliteImpl::getUserProfile(sqlite3_stmt* &stmt, CUserProfileDa
     return state;
 }
 
-int UserProfileDAOSqliteImpl::DeleteUserProfile(int type) {
+void UserProfileDAOSqliteImpl::DeleteUserProfile(std::string& err, int& state, int type) {
     std::string query = getFormatingString("DELETE FROM %s WHERE %s = ?", Db_UserProfile_Table, Db_Field_ServiceType);
-    std::string err;
-    int state = _database->StartTransaction(err);
+    state = _database->StartTransaction(err);
     if(state != SQLITE_OK) {
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     sqlite3_stmt *stmt_delete = nullptr;
     state = _database->PrepareSQLquery(query, stmt_delete, err);
     if(state != SQLITE_OK || stmt_delete == nullptr ) {
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_bind_int(stmt_delete, 1, type);
     if(state != SQLITE_OK) {
         sqlite3_reset(stmt_delete);
         sqlite3_finalize(stmt_delete);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_step(stmt_delete);
     if(state != SQLITE_DONE) {
         sqlite3_reset(stmt_delete);
         sqlite3_finalize(stmt_delete);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_reset(stmt_delete);
     if(state != SQLITE_OK) {
         sqlite3_finalize(stmt_delete);
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = sqlite3_finalize(stmt_delete);
     if(state != SQLITE_OK) {
         state = _database->RollbackTransaction(err);
-        return state;
+        return;
     }
     state = _database->CommitTransaction(err);
-    return state;
 }

@@ -14,9 +14,14 @@
 		FE0482A529FBDA7C00FCFAA8 /* LoginViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0482A429FBDA7C00FCFAA8 /* LoginViewPresenter.m */; };
 		FE0482A729FE5AFA00FCFAA8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0482A629FE5AFA00FCFAA8 /* libsqlite3.tbd */; };
 		FE0482AC29FE5D2900FCFAA8 /* SQLiteDataBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE0482AA29FE5D2900FCFAA8 /* SQLiteDataBase.cpp */; };
+		FE12F6B12AED966A0079078D /* BoostThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE12F6AF2AED966A0079078D /* BoostThreadPool.cpp */; };
 		FE24862029E9CD96008044FA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24861F29E9CD96008044FA /* Utils.m */; };
-		FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */; };
+		FE28B0082B03CB5600A34DD5 /* DataAccessAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28B0072B03CB5600A34DD5 /* DataAccessAssembly.m */; };
+		FE28B00B2B03CDFC00A34DD5 /* SQLiteDataBaseBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE28B00A2B03CDFC00A34DD5 /* SQLiteDataBaseBridge.mm */; };
+		FE54E6C82A91202700D88C33 /* BoostUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE54E6C72A91202700D88C33 /* BoostUtils.cpp */; };
 		FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE57C52C29E89A6000DC3ABE /* UserProfileData.m */; };
+		FE7082002AD5AF4C0052D93F /* libboost_url.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7081FF2AD5AF4C0052D93F /* libboost_url.a */; };
+		FE74C2F02A9F983D00079513 /* HttpSecureSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE74C2EE2A9F983D00079513 /* HttpSecureSession.cpp */; };
 		FE8ABB932A655CB6009584D7 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8ABB922A655CB6009584D7 /* libxml2.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B0F29D7007B0013B85F /* AppDelegate.m */; };
 		FE971B1329D7007B0013B85F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971B1229D7007B0013B85F /* SceneDelegate.m */; };
@@ -36,8 +41,10 @@
 		FE9F160229E417F700872139 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9F160129E417F700872139 /* Login.storyboard */; };
 		FE9F160729E4217700872139 /* LoginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F160629E4217700872139 /* LoginViewCell.m */; };
 		FEA0683E2A0D348C00D9D72C /* SQLiteConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */; };
+		FEC0BA212A811B7100DC30B2 /* UserProfileDAOSqliteBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEC0BA202A811B7100DC30B2 /* UserProfileDAOSqliteBridge.mm */; };
 		FEEBAC522A73AC6B00B91904 /* YandexLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAC512A73AC6B00B91904 /* YandexLoginService.m */; };
 		FEEBAC562A73C00200B91904 /* OneDriveLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAC552A73C00200B91904 /* OneDriveLoginService.m */; };
+		FEEBAC5A2A742F6C00B91904 /* DropBoxLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAC592A742F6C00B91904 /* DropBoxLoginService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,16 +67,29 @@
 		FE0482AA29FE5D2900FCFAA8 /* SQLiteDataBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteDataBase.cpp; sourceTree = "<group>"; };
 		FE0482AB29FE5D2900FCFAA8 /* SQLiteDataBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SQLiteDataBase.hpp; sourceTree = "<group>"; };
 		FE0482AD2A00F21000FCFAA8 /* SQLiteConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteConstants.h; sourceTree = "<group>"; };
+		FE12F6AE2AED8BA90079078D /* ThreadPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		FE12F6AF2AED966A0079078D /* BoostThreadPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BoostThreadPool.cpp; sourceTree = "<group>"; };
+		FE12F6B02AED966A0079078D /* BoostThreadPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BoostThreadPool.hpp; sourceTree = "<group>"; };
 		FE24861E29E9CD70008044FA /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		FE24861F29E9CD96008044FA /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadPool.cpp; sourceTree = "<group>"; };
-		FE35227A2A17D9CF005B11B6 /* ThreadPool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		FE28B0042B0365C200A34DD5 /* ThreadPoolImpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadPoolImpl.hpp; sourceTree = "<group>"; };
+		FE28B0062B03CB5600A34DD5 /* DataAccessAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataAccessAssembly.h; sourceTree = "<group>"; };
+		FE28B0072B03CB5600A34DD5 /* DataAccessAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataAccessAssembly.m; sourceTree = "<group>"; };
+		FE28B0092B03CDFC00A34DD5 /* SQLiteDataBaseBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteDataBaseBridge.h; sourceTree = "<group>"; };
+		FE28B00A2B03CDFC00A34DD5 /* SQLiteDataBaseBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SQLiteDataBaseBridge.mm; sourceTree = "<group>"; };
 		FE41E0D029F27C7B00F7F1B5 /* LoginViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewInput.h; sourceTree = "<group>"; };
 		FE43D70129E0331E00D25F7C /* LeetCodeProblems.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeetCodeProblems.entitlements; sourceTree = "<group>"; };
 		FE51C79C29D9E50400BBECF4 /* MainViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewInput.h; sourceTree = "<group>"; };
 		FE51C79D29D9E55A00BBECF4 /* MainViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewOutput.h; sourceTree = "<group>"; };
+		FE54E6C62A911FB600D88C33 /* BoostSessionHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BoostSessionHeader.hpp; sourceTree = "<group>"; };
+		FE54E6C72A91202700D88C33 /* BoostUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BoostUtils.cpp; sourceTree = "<group>"; };
 		FE57C52B29E89A6000DC3ABE /* UserProfileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileData.h; sourceTree = "<group>"; };
 		FE57C52C29E89A6000DC3ABE /* UserProfileData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfileData.m; sourceTree = "<group>"; };
+		FE7081FD2AD5AF240052D93F /* SSLLibraries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SSLLibraries; path = ../../SSLLibraries; sourceTree = "<group>"; };
+		FE7081FF2AD5AF4C0052D93F /* libboost_url.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_url.a; path = ../../SSLLibraries/boost_1_83_0/stage/lib/libboost_url.a; sourceTree = "<group>"; };
+		FE74C2EC2A9F8EAD00079513 /* HttpSession.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HttpSession.hpp; sourceTree = "<group>"; };
+		FE74C2EE2A9F983D00079513 /* HttpSecureSession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HttpSecureSession.cpp; sourceTree = "<group>"; };
+		FE74C2EF2A9F983D00079513 /* HttpSecureSession.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HttpSecureSession.hpp; sourceTree = "<group>"; };
 		FE8ABB902A654ECD009584D7 /* LoginServiceOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginServiceOutput.h; sourceTree = "<group>"; };
 		FE8ABB922A655CB6009584D7 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		FE8ABB942A656F33009584D7 /* LoginViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewCellDelegate.h; sourceTree = "<group>"; };
@@ -109,12 +129,19 @@
 		FE9F160529E4217700872139 /* LoginViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewCell.h; sourceTree = "<group>"; };
 		FE9F160629E4217700872139 /* LoginViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewCell.m; sourceTree = "<group>"; };
 		FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SQLiteConstants.c; sourceTree = "<group>"; };
+		FEA0B15C2AA5D5AF00B79EE2 /* HttpService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HttpService.hpp; sourceTree = "<group>"; };
 		FEA798B72A03C6FA0012617C /* CUserProfileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUserProfileData.h; sourceTree = "<group>"; };
 		FEA798B82A03C7D60012617C /* ServicesConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesConsts.h; sourceTree = "<group>"; };
+		FEAF37B92AB35F9400971A46 /* IParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IParser.hpp; sourceTree = "<group>"; };
+		FEC0BA1E2A81117200DC30B2 /* IUserProfileDAOBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUserProfileDAOBridge.h; sourceTree = "<group>"; };
+		FEC0BA1F2A811B7100DC30B2 /* UserProfileDAOSqliteBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileDAOSqliteBridge.h; sourceTree = "<group>"; };
+		FEC0BA202A811B7100DC30B2 /* UserProfileDAOSqliteBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UserProfileDAOSqliteBridge.mm; sourceTree = "<group>"; };
 		FEEBAC502A73AC6B00B91904 /* YandexLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexLoginService.h; sourceTree = "<group>"; };
 		FEEBAC512A73AC6B00B91904 /* YandexLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YandexLoginService.m; sourceTree = "<group>"; };
 		FEEBAC542A73C00200B91904 /* OneDriveLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneDriveLoginService.h; sourceTree = "<group>"; };
 		FEEBAC552A73C00200B91904 /* OneDriveLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneDriveLoginService.m; sourceTree = "<group>"; };
+		FEEBAC582A742F6C00B91904 /* DropBoxLoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropBoxLoginService.h; sourceTree = "<group>"; };
+		FEEBAC592A742F6C00B91904 /* DropBoxLoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropBoxLoginService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7082002AD5AF4C0052D93F /* libboost_url.a in Frameworks */,
 				FE8ABB932A655CB6009584D7 /* libxml2.tbd in Frameworks */,
 				FE0482A729FE5AFA00FCFAA8 /* libsqlite3.tbd in Frameworks */,
 				7F2648844F5A22EA9F0FDCB9 /* libPods-LeetCodeProblems.a in Frameworks */,
@@ -134,6 +162,8 @@
 		731098FEC9628D954576E220 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE7081FF2AD5AF4C0052D93F /* libboost_url.a */,
+				FE7081FD2AD5AF240052D93F /* SSLLibraries */,
 				FE8ABB922A655CB6009584D7 /* libxml2.tbd */,
 				FE0482A629FE5AFA00FCFAA8 /* libsqlite3.tbd */,
 				1734C17FD0C550D5B1F6F05A /* libPods-LeetCodeProblems.a */,
@@ -166,8 +196,21 @@
 				FE0482AB29FE5D2900FCFAA8 /* SQLiteDataBase.hpp */,
 				FE0482AD2A00F21000FCFAA8 /* SQLiteConstants.h */,
 				FEA0683D2A0D348C00D9D72C /* SQLiteConstants.c */,
+				FE28B0092B03CDFC00A34DD5 /* SQLiteDataBaseBridge.h */,
+				FE28B00A2B03CDFC00A34DD5 /* SQLiteDataBaseBridge.mm */,
 			);
 			path = SQLiteData;
+			sourceTree = "<group>";
+		};
+		FE12F6AD2AED88A10079078D /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				FE12F6AE2AED8BA90079078D /* ThreadPool.hpp */,
+				FE12F6AF2AED966A0079078D /* BoostThreadPool.cpp */,
+				FE12F6B02AED966A0079078D /* BoostThreadPool.hpp */,
+				FE28B0042B0365C200A34DD5 /* ThreadPoolImpl.hpp */,
+			);
+			path = ThreadPool;
 			sourceTree = "<group>";
 		};
 		FE24861D29E9CCF6008044FA /* Utils */ = {
@@ -184,18 +227,8 @@
 		FE3522772A17D957005B11B6 /* LocalServices */ = {
 			isa = PBXGroup;
 			children = (
-				FE3522782A17D96B005B11B6 /* ThreadPool */,
 			);
 			path = LocalServices;
-			sourceTree = "<group>";
-		};
-		FE3522782A17D96B005B11B6 /* ThreadPool */ = {
-			isa = PBXGroup;
-			children = (
-				FE3522792A17D9CF005B11B6 /* ThreadPool.cpp */,
-				FE35227A2A17D9CF005B11B6 /* ThreadPool.hpp */,
-			);
-			path = ThreadPool;
 			sourceTree = "<group>";
 		};
 		FE51C79629D9E3B800BBECF4 /* Modules */ = {
@@ -260,6 +293,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE54E6C52A911F6A00D88C33 /* HttpSession */ = {
+			isa = PBXGroup;
+			children = (
+				FE54E6C62A911FB600D88C33 /* BoostSessionHeader.hpp */,
+				FE54E6C72A91202700D88C33 /* BoostUtils.cpp */,
+				FE74C2EC2A9F8EAD00079513 /* HttpSession.hpp */,
+				FE74C2EE2A9F983D00079513 /* HttpSecureSession.cpp */,
+				FE74C2EF2A9F983D00079513 /* HttpSecureSession.hpp */,
+			);
+			path = HttpSession;
+			sourceTree = "<group>";
+		};
 		FE57C52E29E89A7400DC3ABE /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +313,23 @@
 				FEA798B72A03C6FA0012617C /* CUserProfileData.h */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		FE8981322AD6A00600920F99 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				FE8981332AD6A01900920F99 /* DataAccessAssembly */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		FE8981332AD6A01900920F99 /* DataAccessAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				FE28B0062B03CB5600A34DD5 /* DataAccessAssembly.h */,
+				FE28B0072B03CB5600A34DD5 /* DataAccessAssembly.m */,
+			);
+			path = DataAccessAssembly;
 			sourceTree = "<group>";
 		};
 		FE971B0229D7007A0013B85F = {
@@ -291,6 +353,7 @@
 		FE971B0D29D7007B0013B85F /* LeetCodeProblems */ = {
 			isa = PBXGroup;
 			children = (
+				FE8981322AD6A00600920F99 /* Assemblies */,
 				FE43D70129E0331E00D25F7C /* LeetCodeProblems.entitlements */,
 				FE51C79629D9E3B800BBECF4 /* Modules */,
 				FE0482A829FE5BCB00FCFAA8 /* DataBase */,
@@ -322,6 +385,9 @@
 		FE98F92229E5D2D3007916BE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FE12F6AD2AED88A10079078D /* ThreadPool */,
+				FEAF37B82AB3510500971A46 /* Parser */,
+				FEA0B1572AA3CA8200B79EE2 /* HttpService */,
 				FEA798B82A03C7D60012617C /* ServicesConsts.h */,
 				FE57C52E29E89A7400DC3ABE /* UserProfile */,
 				FE98F92329E5D319007916BE /* LoginService */,
@@ -348,6 +414,9 @@
 				FE9CBEE52A0C14D7005B00ED /* IUserProfileDAO.hpp */,
 				FE9CBEE72A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp */,
 				FE9CBEE82A0C1F20005B00ED /* UserProfileDAOSqliteImpl.hpp */,
+				FEC0BA1E2A81117200DC30B2 /* IUserProfileDAOBridge.h */,
+				FEC0BA1F2A811B7100DC30B2 /* UserProfileDAOSqliteBridge.h */,
+				FEC0BA202A811B7100DC30B2 /* UserProfileDAOSqliteBridge.mm */,
 			);
 			path = UserProfileDAO;
 			sourceTree = "<group>";
@@ -434,6 +503,31 @@
 			path = LoginCell;
 			sourceTree = "<group>";
 		};
+		FEA0B1572AA3CA8200B79EE2 /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				FEA0B1582AA5D47D00B79EE2 /* HttpService */,
+				FE54E6C52A911F6A00D88C33 /* HttpSession */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
+		FEA0B1582AA5D47D00B79EE2 /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				FEA0B15C2AA5D5AF00B79EE2 /* HttpService.hpp */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
+		FEAF37B82AB3510500971A46 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FEAF37B92AB35F9400971A46 /* IParser.hpp */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 		FEEBAC4F2A73AC2F00B91904 /* YandexLoginService */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +549,8 @@
 		FEEBAC572A74003900B91904 /* DropBoxLoginService */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBAC582A742F6C00B91904 /* DropBoxLoginService.h */,
+				FEEBAC592A742F6C00B91904 /* DropBoxLoginService.m */,
 			);
 			path = DropBoxLoginService;
 			sourceTree = "<group>";
@@ -487,7 +583,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					FE971B0A29D7007B0013B85F = {
 						CreatedOnToolsVersion = 14.3;
@@ -556,9 +652,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE28B0082B03CB5600A34DD5 /* DataAccessAssembly.m in Sources */,
 				FEEBAC522A73AC6B00B91904 /* YandexLoginService.m in Sources */,
 				FE9F160729E4217700872139 /* LoginViewCell.m in Sources */,
-				FE35227B2A17D9CF005B11B6 /* ThreadPool.cpp in Sources */,
+				FE12F6B12AED966A0079078D /* BoostThreadPool.cpp in Sources */,
 				FE97A08529DB569800048A06 /* MainViewModuleInitializer.m in Sources */,
 				FE97A08229DB53DF00048A06 /* MainViewRouter.m in Sources */,
 				FEA0683E2A0D348C00D9D72C /* SQLiteConstants.c in Sources */,
@@ -566,20 +663,25 @@
 				FE971B1629D7007B0013B85F /* MainViewController.m in Sources */,
 				FE971B1029D7007B0013B85F /* AppDelegate.m in Sources */,
 				FE24862029E9CD96008044FA /* Utils.m in Sources */,
+				FE28B00B2B03CDFC00A34DD5 /* SQLiteDataBaseBridge.mm in Sources */,
 				FE971B2129D7007C0013B85F /* main.m in Sources */,
 				FE04829E29FBCA5800FCFAA8 /* LoginViewRouter.m in Sources */,
 				FE0482A529FBDA7C00FCFAA8 /* LoginViewPresenter.m in Sources */,
 				FE0482AC29FE5D2900FCFAA8 /* SQLiteDataBase.cpp in Sources */,
 				FE98F92629E5E0B3007916BE /* LoginService.m in Sources */,
 				FEEBAC562A73C00200B91904 /* OneDriveLoginService.m in Sources */,
+				FEC0BA212A811B7100DC30B2 /* UserProfileDAOSqliteBridge.mm in Sources */,
 				FE57C52D29E89A6000DC3ABE /* UserProfileData.m in Sources */,
 				FE9CBEE92A0C1F20005B00ED /* UserProfileDAOSqliteImpl.cpp in Sources */,
 				FE9F160029E417D800872139 /* LoginViewController.m in Sources */,
 				FE97A07829DAF1B800048A06 /* MainViewPresenter.m in Sources */,
+				FE74C2F02A9F983D00079513 /* HttpSecureSession.cpp in Sources */,
 				FE97A07D29DB411000048A06 /* MainViewInteractor.m in Sources */,
+				FE54E6C82A91202700D88C33 /* BoostUtils.cpp in Sources */,
 				FE971B1329D7007B0013B85F /* SceneDelegate.m in Sources */,
 				FE04829829FA87EC00FCFAA8 /* LoginViewInteractor.m in Sources */,
 				FE0482A129FBCBA800FCFAA8 /* LoginViewModuleInitializer.m in Sources */,
+				FEEBAC5A2A742F6C00B91904 /* DropBoxLoginService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +743,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -699,6 +802,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -727,6 +831,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79E756PTBV;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MSAL\"",
+					"\"${PODS_ROOT}/Headers/Public/ObjectiveDropboxOfficial\"",
+					"\"${PODS_ROOT}/Headers/Public/YandexLoginSDK\"",
+					/usr/local/ssl/include,
+					/Users/dmitriyaleynikov/Documents/SSLLibraries/boost_1_83_0,
+					"/Users/dmitriyaleynikov/Documents/SSLLibraries/certify-master/include",
+				);
 				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LeetCodeProblems;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -737,7 +851,36 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MSAL\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectiveDropboxOfficial\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YandexLoginSDK\"",
+					/usr/local/ssl/lib,
+					/Users/dmitriyaleynikov/Documents/SSLLibraries/boost_1_83_0/stage/lib,
+				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MSAL\"",
+					"-l\"ObjectiveDropboxOfficial\"",
+					"-l\"YandexLoginSDK\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lssl",
+					"-lcrypto",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = home.LeetCodeProblems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -758,6 +901,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79E756PTBV;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MSAL\"",
+					"\"${PODS_ROOT}/Headers/Public/ObjectiveDropboxOfficial\"",
+					"\"${PODS_ROOT}/Headers/Public/YandexLoginSDK\"",
+					/usr/local/ssl/include,
+					/Users/dmitriyaleynikov/Documents/SSLLibraries/boost_1_83_0,
+					"/Users/dmitriyaleynikov/Documents/SSLLibraries/certify-master/include",
+				);
 				INFOPLIST_FILE = LeetCodeProblems/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LeetCodeProblems;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -768,7 +921,36 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MSAL\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectiveDropboxOfficial\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YandexLoginSDK\"",
+					/usr/local/ssl/lib,
+					/Users/dmitriyaleynikov/Documents/SSLLibraries/boost_1_83_0/stage/lib,
+				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MSAL\"",
+					"-l\"ObjectiveDropboxOfficial\"",
+					"-l\"YandexLoginSDK\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lssl",
+					"-lcrypto",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = home.LeetCodeProblems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

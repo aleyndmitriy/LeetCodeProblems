@@ -1,0 +1,1 @@
+../../../Target Support Files/YandexLoginSDK/YandexLoginSDK-umbrella.h

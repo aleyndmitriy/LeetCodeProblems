@@ -20,15 +20,15 @@ public:
     UserProfileDAOSqliteImpl& operator=(const UserProfileDAOSqliteImpl& src) = default;
     UserProfileDAOSqliteImpl(UserProfileDAOSqliteImpl&& src) = default;
     UserProfileDAOSqliteImpl& operator=(UserProfileDAOSqliteImpl&& src) = default;
-    UserProfileDAOSqliteImpl(std::shared_ptr<SQLiteDataBase> database);
-    int SaveUserProfile(const CUserProfileData& user) override;
-    std::optional<CUserProfileData> GetUserProfile(int type) override;
-    int DeleteUserProfile(int type) override;
+    UserProfileDAOSqliteImpl(SQLiteDataBase* database);
+    void SaveUserProfile(const CUserProfileData& user, std::string& err, int& state) override;
+    void GetUserProfile(CUserProfileData& user, std::string& err, int& state, int type) override;
+    void DeleteUserProfile(std::string& err, int& state, int type) override;
     ~UserProfileDAOSqliteImpl();
 private:
-    std::shared_ptr<SQLiteDataBase> _database;
+    SQLiteDataBase* _database;
     int bindUserProfile(sqlite3_stmt* &stmt, const CUserProfileData& user, std::string& databaseError);
-    int getUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError);
+    int fetchUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError);
 };
 
 #endif /* UserProfileDAOSqliteImpl_hpp */

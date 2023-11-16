@@ -112,3 +112,4 @@ void SQLiteDataBase::GetError(std::string& transactError) {
     std::string err{sqlite3_errmsg(sqliteDatabase)};
     transactError = err;
 }
+

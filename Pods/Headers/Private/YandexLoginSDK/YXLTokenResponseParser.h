@@ -1,1 +1,0 @@
-../../../YandexLoginSDK/lib/Classes/Private/Networking/ResponseParser/YXLTokenResponseParser.h

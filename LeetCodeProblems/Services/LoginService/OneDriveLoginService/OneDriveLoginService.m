@@ -27,7 +27,8 @@
     if(self) {
         kAuthority  = @"https://login.microsoftonline.com/common";
         kClientId = @"fdacb5ee-77bd-40d8-ba22-c2d48749f92a";
-        scopes = @[@"files.readwrite.all"];
+        scopes = @[@"user.read",@"files.readwrite.all"];
+        return self;
     }
     return nil;
 }
@@ -88,6 +89,7 @@
     UIViewController* controller = [UIApplication sharedApplication].keyWindow.rootViewController;
     if(controller == nil) {
         NSLog(@"Can't get root controller");
+        return;
     }
     while (controller.presentedViewController) {
             controller = controller.presentedViewController;

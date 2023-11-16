@@ -9,13 +9,13 @@
 #define IUserProfileDAO_hpp
 
 #include "CUserProfileData.h"
-#import <optional>
+#import <string>
 class IUserProfileDAO
 {
 public:
-    virtual int SaveUserProfile(const CUserProfileData& user) = 0;
-    virtual std::optional<CUserProfileData> GetUserProfile(int type) = 0;
-    virtual int DeleteUserProfile(int type) = 0;
+    virtual void SaveUserProfile(const CUserProfileData& user, std::string& err, int& state) = 0;
+    virtual void GetUserProfile(CUserProfileData& user, std::string& err, int& state, int type) = 0;
+    virtual void DeleteUserProfile(std::string& err, int& state, int type) = 0;
     virtual ~IUserProfileDAO() {
         
     };
