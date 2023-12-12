@@ -10,14 +10,18 @@
 #import <memory>
 #import "UserProfileDAOSqliteImpl.hpp"
 #import "IUserProfileDAO.hpp"
+
+#import "SQLiteDataBaseBridge.h"
+
 @implementation UserProfileDAOSqliteBridge
 {
     std::unique_ptr<IUserProfileDAO> impl;
 }
--(instancetype) init:(SQLiteDataBaseBridge*) dataBase
+-(instancetype) init
 {
     if([super init]) {
-        impl = std::make_unique<UserProfileDAOSqliteImpl>(dataBase);
+        
+        impl = std::make_unique<UserProfileDAOSqliteImpl>([SQLiteDataBaseBridge sharedInstance].database);
         return self;
     }
     return nil;
@@ -29,6 +33,7 @@
 - (UserProfileData *)getUserProfile:(RemoteServiceType)type {
     
     
+  
     return nil;
 }
 

@@ -3,24 +3,20 @@ PODS:
     - MSAL/app-lib (= 1.2.5)
   - MSAL/app-lib (1.2.5)
   - ObjectiveDropboxOfficial (7.1.1)
-  - YandexLoginSDK (3.0.0)
 
 DEPENDENCIES:
   - MSAL
   - ObjectiveDropboxOfficial
-  - YandexLoginSDK
 
 SPEC REPOS:
   trunk:
     - MSAL
     - ObjectiveDropboxOfficial
-    - YandexLoginSDK
 
 SPEC CHECKSUMS:
   MSAL: 5149daaa19228c2c27d81987634da15b50981cef
   ObjectiveDropboxOfficial: c2081f0a4533e6069e2adebed142d0d28a77335f
-  YandexLoginSDK: 7b0fdf2950722ec7d1829b1166c4a670a136f850
 
-PODFILE CHECKSUM: 7041cb4cee86d77ff3efdad5d5eed90c691f5b0d
+PODFILE CHECKSUM: 2a3a304f07d1f56ee4dddfe5fa3b611453a2e6ec
 
 COCOAPODS: 1.12.0

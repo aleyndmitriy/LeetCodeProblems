@@ -9,6 +9,100 @@
 #include "SQLiteConstants.h"
 #import <string>
 #import <cstring>
+#include "BoostThreadPoolSingleton.hpp"
+#include <iostream>
+class VariableFirst {
+private:
+    std::size_t var1;
+public:
+    VariableFirst(std::size_t var) :var1{ var } { std::cout << "default varfirst" << std::endl; };
+    VariableFirst() :VariableFirst{ 0 } {};
+    VariableFirst(const VariableFirst& src) :var1{ src.var1 } { std::cout << "copy varfirst crt" << std::endl; };
+    VariableFirst& operator=(const VariableFirst& src) {
+        std::cout << "copy varfirst assign " << std::endl;
+        var1 = src.var1; return *this;
+    };
+    VariableFirst(VariableFirst&& rhs) noexcept :var1{ std::move(rhs.var1)}  { std::cout << "move varfirst crt" << std::endl; };
+    VariableFirst& operator=(VariableFirst&& rhs) noexcept {
+        std::cout << "copy varfirst assign " << std::endl;
+        var1 = std::move(rhs.var1); return *this; return *this;
+    };
+    ~VariableFirst() { std::cout << "destructor varfirst" << std::endl; };
+    std::size_t GetVal() const { return var1; };
+    void SetVal(std::size_t var) { var1 = var; };
+};
+
+class VariableSecond {
+private:
+    std::size_t var2;
+public:
+    VariableSecond(std::size_t var) :var2{ var } { std::cout << "default varSecond" << std::endl; };
+    VariableSecond() :VariableSecond{ 0 } {};
+    VariableSecond(const VariableSecond& src) :var2{ src.var2 } { std::cout << "copy varSecond crt" << std::endl; };
+    VariableSecond& operator=(const VariableSecond& src) {
+        std::cout << "copy varSecond assign " << std::endl;
+        var2 = src.var2; return *this;
+    };
+    VariableSecond(VariableSecond&& rhs) noexcept :var2{ std::move(rhs.var2) } { std::cout << "move varSecond crt" << std::endl; };
+    VariableSecond& operator=(VariableSecond&& rhs) noexcept {
+        std::cout << "copy varSecond assign " << std::endl;
+        var2 = std::move(rhs.var2); return *this; return *this;
+    };
+    ~VariableSecond() { std::cout << "destructor varSecond" << std::endl; };
+    std::size_t GetVal() const { return var2; };
+    void SetVal(std::size_t var) { var2 = var; };
+};
+struct Task1 {
+    std::size_t operator()(std::size_t num) {
+        std::size_t res{ 0 };
+        for (std::size_t index = 0; index < num; ++index)
+        {
+            ++res;
+        }
+        return res;
+    };
+    std::size_t twoArgsRef(VariableFirst& first, VariableSecond& second) {
+        std::size_t res{ 0 };
+        for (std::size_t index = 0; index < first.GetVal(); ++index)
+        {
+            ++res;
+        }
+        second.SetVal(0);
+        first.SetVal(0);
+        return res;
+    };
+
+    std::size_t twoArgsMove(VariableFirst&& first, VariableSecond&& second) {
+        std::size_t res{ 0 };
+        for (std::size_t index = 0; index < first.GetVal(); ++index)
+        {
+            ++res;
+        }
+        second.SetVal(0);
+        first.SetVal(0);
+        return res;
+    };
+    std::size_t twoArgsCopy(VariableFirst first, VariableSecond second) {
+        std::size_t res{ 0 };
+        for (std::size_t index = 0; index < first.GetVal(); ++index)
+        {
+            ++res;
+        }
+        second.SetVal(0);
+        first.SetVal(0);
+        return res;
+    };
+    std::size_t zeroArgs() {
+        std::size_t res{ 0 };
+        for (std::size_t t = 0; t < 2560; ++t) {
+            res++;
+        }
+        return res;
+    };
+    Task1() = default;
+    Task1(const Task1& src) { std::cout << "copy constructor" << std::endl; };
+    Task1(Task1&& src) noexcept { std::cout << "move constructor" << std::endl; };
+};
 
 UserProfileDAOSqliteImpl::UserProfileDAOSqliteImpl(SQLiteDataBase* database):_database(database) {
     
@@ -133,17 +227,28 @@ void UserProfileDAOSqliteImpl::SaveUserProfile(const CUserProfileData& user, std
 }
 
 void UserProfileDAOSqliteImpl::GetUserProfile(CUserProfileData& user, std::string& err, int& state, int type) {
+    //auto fun = std::bind(&UserProfileDAOSqliteImpl::getUserProfileSync, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+    Task1 ts1;
+       VariableFirst twolf{ 100 };
+       VariableSecond tworf{ 1000 };
+    std::size_t threerf{ 100 };
+     
+    
+    
+}
+
+int UserProfileDAOSqliteImpl::getUserProfileSync(CUserProfileData& user, std::string& err, int type) {
     std::string query = getFormatingString("SELECT %s, %s, %s, %s, %s, %s, %s, %s FROM %s WHERE %s = ?", Db_Field_AccessToken, Db_Field_UserId, Db_Field_GivenName, Db_Field_Phone, Db_Field_Email, Db_Field_Name, Db_Field_FamilyName, Db_Field_ServiceType, Db_UserProfile_Table, Db_Field_ServiceType);
     sqlite3_stmt *stmt_get = nullptr;
-    state = _database->PrepareSQLquery(query, stmt_get, err);
+    int state = _database->PrepareSQLquery(query, stmt_get, err);
     if(state != SQLITE_OK) {
-        return;
+        return state;
     }
     state = sqlite3_bind_int(stmt_get, 1, type);
     if(state != SQLITE_OK) {
         sqlite3_reset(stmt_get);
         sqlite3_finalize(stmt_get);
-        return;
+        return state;
     }
     std::memset(&user, '\0', sizeof(CUserProfileData));
     state = fetchUserProfile(stmt_get,user,err);
@@ -151,18 +256,19 @@ void UserProfileDAOSqliteImpl::GetUserProfile(CUserProfileData& user, std::strin
         sqlite3_reset(stmt_get);
         sqlite3_finalize(stmt_get);
         std::memset(&user, '\0', sizeof(CUserProfileData));
-        return;
+        return state;
     }
     state = sqlite3_reset(stmt_get);
     if(state != SQLITE_OK) {
         sqlite3_finalize(stmt_get);
         std::memset(&user, '\0', sizeof(CUserProfileData));
-        return;
+        return state;
     }
     state = sqlite3_finalize(stmt_get);
     if(state != SQLITE_OK) {
         std::memset(&user, '\0', sizeof(CUserProfileData));
     }
+    return state;
 }
 
 int UserProfileDAOSqliteImpl::fetchUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError) {

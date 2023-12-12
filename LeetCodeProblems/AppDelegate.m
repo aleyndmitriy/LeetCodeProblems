@@ -29,7 +29,6 @@ NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
     @try {
         LoginViewController* controller = [LoginViewModuleInitializer createLoginViewController];
         NSError* initError = nil;
-        [YXLSdk.shared activateWithAppId:appIdYandexClientId error:&initError];
         NSLog(@"Error\nName-> %@\nDescription-> %@", [initError localizedRecoverySuggestion],
                 [initError localizedDescription]);
         [DBClientsManager setupWithAppKey:appIdDropBoxClientId];
@@ -44,16 +43,14 @@ NSString* appIdDropBoxClientId = @"0x1vbxaklvuouqb";
 
 -(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
 {
-    [YXLSdk.shared processUserActivity:userActivity];
+   
     return YES;
 }
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
     NSString* key = options[UIApplicationOpenURLOptionsSourceApplicationKey];
-    if([YXLSdk.shared handleOpenURL:url sourceApplication:key]) {
-        NSLog(@"This URL is handled by Yandex");
-    }
+   
     
     return YES;
 }

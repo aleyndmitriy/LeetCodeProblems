@@ -21,8 +21,13 @@ public:
     BoostThreadPoolImpl(BoostThreadPoolImpl&& src) = delete;
     BoostThreadPoolImpl& operator=(BoostThreadPoolImpl&& src) = delete;
     void Submit(FunctionWrapper&& func) override;
+    void Stop() override;
+    void Join() override;
     ~BoostThreadPoolImpl() override;
 private:
     boost::asio::thread_pool threadPool;
 };
+
+
+
 #endif /* BoostThreadPool_hpp */

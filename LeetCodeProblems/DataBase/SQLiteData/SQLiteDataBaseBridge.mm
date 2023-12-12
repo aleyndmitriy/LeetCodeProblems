@@ -11,9 +11,6 @@
 #include <memory>
 
 @implementation SQLiteDataBaseBridge
-{
-    NSString* databasePath;
-}
 
 + (instancetype)sharedInstance {
     static SQLiteDataBaseBridge* sharedInstance_ = nil;
@@ -34,8 +31,8 @@
 
 - (instancetype)init {
   if (self = [super init]) {
-      databasePath = [self getDatabaseAddress];
-      _database = new SQLiteDataBase{std::string{databasePath.UTF8String}};
+      _databasePath = [self getDatabaseAddress];
+      _database = new SQLiteDataBase{std::string{_databasePath.UTF8String}};
       
   }
   return self;

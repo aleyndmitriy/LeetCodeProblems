@@ -7,11 +7,10 @@
 
 #import <Foundation/Foundation.h>
 #import "IUserProfileDAOBridge.h"
-@class SQLiteDataBaseBridge;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserProfileDAOSqliteBridge : NSObject<IUserProfileDAOBridge>
--(instancetype) init:(SQLiteDataBaseBridge*) dataBase;
+-(instancetype) init;
 @end
 
 NS_ASSUME_NONNULL_END

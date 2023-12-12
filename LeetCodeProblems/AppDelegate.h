@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <YandexLoginSDK/YandexLoginSDK.h>
 #import <ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

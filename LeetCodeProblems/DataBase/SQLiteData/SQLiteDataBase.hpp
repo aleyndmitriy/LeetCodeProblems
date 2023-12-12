@@ -41,7 +41,7 @@ public:
 
 template<typename... Arguments, std::invocable<Arguments...>Func> typename std::invoke_result<Func, Arguments...>::type SQLiteDataBase::getData(Func&& f, Arguments&&... args) {
     std::shared_lock<std::shared_mutex> lock(smtx);
-    typename std::invoke_result<Func,std::string&, int&>::type res = f();
+    typename std::invoke_result<Func,Arguments...>::type res = f(args...);
     return res;
 }
 #endif /* SQLiteDataBase_hpp */

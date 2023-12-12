@@ -13,14 +13,6 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>YandexLoginSDK</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>yxfe3f41ba6aff4b8180ea470cc43f9805</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
 			<string>OneDriveLoginSDK</string>
 			<key>CFBundleURLSchemes</key>
 			<array>

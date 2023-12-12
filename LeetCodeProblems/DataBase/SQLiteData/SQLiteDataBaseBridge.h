@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SQLiteDataBaseBridge : NSObject
 + (instancetype) sharedInstance;
-@property(nonatomic, unsafe_unretained) SQLiteDataBase* database;
+
+@property(nonatomic, readonly, unsafe_unretained) SQLiteDataBase* database;
+@property(nonatomic, readonly, copy) NSString* databasePath;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -45,6 +45,8 @@ public:
     ThreadPoolImpl& operator=(ThreadPoolImpl&& src) = delete;
     virtual ~ThreadPoolImpl() {};
     virtual void Submit(FunctionWrapper&& func) = 0;
+    virtual void Stop() = 0;
+    virtual void Join() = 0;
 };
 
 #endif /* ThreadPoolImpl_hpp */

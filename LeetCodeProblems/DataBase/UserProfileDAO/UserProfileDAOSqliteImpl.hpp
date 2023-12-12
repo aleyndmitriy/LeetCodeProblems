@@ -29,6 +29,7 @@ private:
     SQLiteDataBase* _database;
     int bindUserProfile(sqlite3_stmt* &stmt, const CUserProfileData& user, std::string& databaseError);
     int fetchUserProfile(sqlite3_stmt* &stmt, CUserProfileData& user, std::string& databaseError);
+    int getUserProfileSync(CUserProfileData& user, std::string& err, int type);
 };
 
 #endif /* UserProfileDAOSqliteImpl_hpp */
